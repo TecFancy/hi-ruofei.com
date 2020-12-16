@@ -1,0 +1,15 @@
+<script>
+  (function(){
+    const redirect = () => {
+      const hosts = [
+        "hi-ruofei.netlify.app",
+        "smpower.github.io",
+      ];
+      const { host, pathname } = window.location;
+      hosts.forEach(hostItem => {
+        if (hostItem === host) window.location = `https://hi-ruofei.com${pathname}`;
+      });
+    }
+    redirect();
+  })();
+</script>
