@@ -4,5 +4,4 @@ db.json
 *.log
 .vscode/
 node_modules/
-public/
 .deploy*/
