@@ -176,12 +176,13 @@ social_icons:
 # Blog rolls
 links_settings:
   icon: fa fa-globe
-  title: Links
+  title: 网址导航
   # Available values: block | inline
-  layout: block
+  layout: inline
 
 links:
-  #Title: https://example.com
+  站长: https://ziyuan.baidu.com/dashboard/index?site=https://hi-ruofei.com/
+  统计: https://tongji.baidu.com/web/29697073/homepage/index
 
 # Table of Contents in the Sidebar
 # Front-matter variable (unsupport wrap expand_all).
