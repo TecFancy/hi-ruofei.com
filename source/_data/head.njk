@@ -1,5 +1,16 @@
 <script>
+  // 百度统计
   var _hmt = _hmt || [];
+  (function () {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?05c0206e7c345b2718a634eac324f70d";
+    var s = document.getElementsByTagName("script")[0];
+    s
+      .parentNode
+      .insertBefore(hm, s);
+  })();
+
+  // 重定向
   (function () {
     const redirect = () => {
       const hosts = ["hi-ruofei.netlify.app", "smpower.github.io", "master--hi-ruofei.netlify.app"];
@@ -11,13 +22,5 @@
       );
     }
     redirect();
-  })();
-  (function () {
-    var hm = document.createElement("script");
-    hm.src = "https://hm.baidu.com/hm.js?05c0206e7c345b2718a634eac324f70d";
-    var s = document.getElementsByTagName("script")[0];
-    s
-      .parentNode
-      .insertBefore(hm, s);
   })();
 </script>
