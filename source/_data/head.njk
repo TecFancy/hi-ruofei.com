@@ -1,15 +1,23 @@
 <script>
-  (function(){
+  var _hmt = _hmt || [];
+  (function () {
     const redirect = () => {
-      const hosts = [
-        "hi-ruofei.netlify.app",
-        "smpower.github.io",
-      ];
-      const { host, pathname } = window.location;
+      const hosts = ["hi-ruofei.netlify.app", "smpower.github.io"];
+      const {host, pathname} = window.location;
       hosts.forEach(hostItem => {
-        if (hostItem === host) window.location = `https://hi-ruofei.com${pathname}`;
-      });
+        if (hostItem === host) 
+          window.location = `https://hi-ruofei.com${pathname}`;
+        }
+      );
     }
     redirect();
+  })();
+  (function () {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?05c0206e7c345b2718a634eac324f70d";
+    var s = document.getElementsByTagName("script")[0];
+    s
+      .parentNode
+      .insertBefore(hm, s);
   })();
 </script>
