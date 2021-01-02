@@ -119,7 +119,7 @@ search:
 # 图片懒加载
 lazyload:
   enable: true
-  # onlypost: false
+  onlypost: true
   # loadingImg:
 
 baidu_url_submit:

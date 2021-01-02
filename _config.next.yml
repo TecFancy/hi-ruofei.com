@@ -84,8 +84,6 @@ menu:
   # about: /about/ || fa fa-user
   development:
     default: /development/ || fa fa-code
-    React:
-      default: /React/
     Jest:
       default: /Jest/
     Webpack:
@@ -97,8 +95,6 @@ menu:
       install: /install/
       guides: /guides/
       api: /api/
-    MongoDB:
-      default: /MongoDB/
   tags: /tags/ || fa fa-tags
   categories: /categories/ || fa fa-th
   archives: /archives/ || fa fa-archive
