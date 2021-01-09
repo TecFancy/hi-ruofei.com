@@ -94,6 +94,8 @@ menu:
       install: /install/
       guides: /guides/
       api: /api/
+  # NCE:
+  #   default: /nce/ || fa fa-book
   tags: /tags/ || fa fa-tags
   categories: /categories/ || fa fa-th
   archives: /archives/ || fa fa-archive
