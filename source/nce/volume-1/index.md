@@ -6,7 +6,7 @@ comments: false
 
 1. [Excuse me! 对不起](001)
 2. [Is this your ...? 这是你的……吗？](002)
-3. Sorry, sir. 对不起，先生。
+3. [Sorry, sir. 对不起，先生。](003)
 4. Is this your ...? 
 5. Nice to meet you. 很高兴见到你。
 6. What make is it? 它是什么牌子的？
