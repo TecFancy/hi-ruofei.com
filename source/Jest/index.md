@@ -1,5 +1,6 @@
 ---
-title: 快速开始 - Jest
+title: Jest
+description: 快速开始
 comments: false
 ---
 

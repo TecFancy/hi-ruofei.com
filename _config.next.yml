@@ -81,19 +81,14 @@ menu:
   # about: /about/ || fa fa-user
   development:
     default: /development/ || fa fa-code
+    JavaScript:
+      default: ../JavaScript/
     Jest:
-      default: /Jest/
-      guides: /guides/
-      api: /api/
+      default: ../Jest/
     Webpack:
-      default: /Webpack/
-      LOADER: /loaders/
-      PLUGIN: /plugins/
+      default: ../Webpack/
     Nodejs:
-      default: /Nodejs/
-      install: /install/
-      guides: /guides/
-      api: /api/
+      default: ../Nodejs/
   NCE:
     default: /nce/ || fa fa-book
     Book One: /book-one/
