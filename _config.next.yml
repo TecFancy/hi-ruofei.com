@@ -89,9 +89,7 @@ menu:
       default: ../Webpack/
     Nodejs:
       default: ../Nodejs/
-  NCE:
-    default: /nce/ || fa fa-book
-    Book One: /book-one/
+  NCE: /nce/ || fa fa-book
   tags: /tags/ || fa fa-tags
   categories: /categories/ || fa fa-th
   archives: /archives/ || fa fa-archive
