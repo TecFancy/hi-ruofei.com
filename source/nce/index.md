@@ -5,4 +5,4 @@ description: Notes of New Concept English
 comments: false
 ---
 
-- [新概念英语第一册](./volume-1/)
+- [新概念英语第一册](./book-one/)
