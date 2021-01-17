@@ -8,6 +8,8 @@ categories: JavaScript
 
 ECMAScript的语法大量借鉴了C及其他类C语言（如Java和Perl）的语法，而 ECMAScript 语法相对其他语言的语法要更加宽松。
 
+<!-- more -->
+
 ## 区分大小写
 
 ECMAScript 中的一切（变量、函数名和操作符）都区分大小写。比如，变量名 `test` 和变量名 `Test` 分别表示完全不同的两个变量。再比如，`typeof` 不能作为变量名（因为它是 ECMAScript 中的一个关键字，关键字不能用作函数名），但是 `typeOf` 则完全可以是一个有效的函数名。
