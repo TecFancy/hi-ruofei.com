@@ -443,3 +443,58 @@ Object.assign(dest, src);
 console.log(dest); // { name: {} }
 console.log(dest.name === src.name); // true
 ```
+
+## 对象标识和相等判断
+
+有些特殊情况下，相等操作符 `===` 并不能符合我们的预期：
+
+```js
+// 这些是 `===` 符合预期的情况
+console.log(true === 1);  // false
+console.log({} === {});   // false
+console.log("2" === 2);   // false
+
+// 下面的情况在不同的 js 引擎中表现不同
+console.log(+0 === -0);   // true
+console.log(+0 === 0);    // true
+console.log(-0 === 0);    // true
+
+// 要确定 NaN 的相等性，必须要使用 `isNaN()`
+console.log(NaN === NaN); // false
+console.log(isNaN(NaN));  // true
+```
+
+为改善上述情况，ES6 规范新增了 `Object.is()` 方法，该方法接收 2 个参数：
+
+``` js
+console.log(Object.is(true, 1));  // false
+console.log(Object.is({}, {}));   // false
+console.log(Object.is("2", 2));   // false
+
+// 正确的 0、+0、-0 相等/不相等判定
+console.log(Object.is(+0, -0));   // false
+console.log(Object.is(+0, 0));    // true
+console.log(Object.is(-0, 0));    // false
+
+// 正确的 `NaN` 相等性判定
+console.log(Object.is(NaN, NaN)); // true
+```
+
+要检查超过 2 个值，递归地利用相等性判断即可：
+
+``` js
+function recursivelyCheckEqual(x, ...rest) {
+  return (
+    Object.is(x, rest[0]) && (rest.length < 2 || recursivelyCheckEqual(...rest))
+  );
+}
+
+const first = "Olive";
+const second = "Olive";
+const third = "Olive";
+const fourth = "Olive";
+
+const result = recursivelyCheckEqual(first, second, third, fourth);
+console.log(result); // true
+```
+
