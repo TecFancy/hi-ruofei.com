@@ -87,8 +87,6 @@ menu:
       default: ../Jest/
     Webpack:
       default: ../Webpack/
-    Nodejs:
-      default: ../Nodejs/
   NCE: /nce/ || fa fa-book
   tags: /tags/ || fa fa-tags
   categories: /categories/ || fa fa-th
