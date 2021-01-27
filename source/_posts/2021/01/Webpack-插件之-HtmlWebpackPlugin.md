@@ -1,6 +1,9 @@
 ---
-title: HtmlWebpackPlugin
-comments: false
+title: Webpack 插件之 HtmlWebpackPlugin
+abbrlink: 6409f2be
+date: 2021-01-27 23:29:23
+categories: Webpack
+tags: 插件
 ---
 
 该插件将为你生成一个 HTML5 文件，用以服务 webpack 编译输出的 bundle。
@@ -10,6 +13,8 @@ comments: false
 ``` bash
 npm install --save-dev html-webpack-plugin # or yarn add --dev html-webpack-plugin
 ```
+
+<!-- more -->
 
 ## 基础用法
 
