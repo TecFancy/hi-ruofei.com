@@ -1,8 +1,11 @@
 ---
-title: Sorry, sir.
-description: 对不起，先生。
-date: 2021-01-08 00:00:00
-comments: false
+title: '[NCE Book One] Lesson 003: Sorry, sir.'
+abbrlink: 67c3f522
+date: 2021-01-27 23:47:21
+categories: 英语
+tags:
+  - 新概念英语
+  - 新概念英语第一册
 ---
 
 ## Listen to the tape then answer the question. Does the man get his umbrella back?
@@ -30,6 +33,8 @@ Thank you very much.
    Question: Does the man get his umbrella back?
    Answer: Yes, the man get his umbrella back.
 {% endnote %}
+
+<!-- more -->
 
 ## New words and expressions
 

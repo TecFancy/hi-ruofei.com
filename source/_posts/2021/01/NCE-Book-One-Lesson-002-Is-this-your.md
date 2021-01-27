@@ -1,8 +1,11 @@
 ---
-title: Is this your ...?
-description: 这是你的……吗？
-date: 2021-01-08 00:00:00
-comments: false
+title: '[NCE Book One] Lesson 002: Is this your ...?'
+abbrlink: dd263ef0
+date: 2021-01-27 23:45:54
+categories: 英语
+tags:
+  - 新概念英语
+  - 新概念英语第一册
 ---
 
 ## New words and expressions

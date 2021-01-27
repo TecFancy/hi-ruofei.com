@@ -1,8 +1,11 @@
 ---
-title: Excuse me! 
-description: 对不起！
-date: 2021-01-08 00:00:00
-comments: false
+title: '[NCE Book One] Lesson 001: Excuse me!'
+abbrlink: 5a392292
+date: 2021-01-27 23:38:32
+categories: 英语
+tags:
+  - 新概念英语
+  - 新概念英语第一册
 ---
 
 ## Listen to the tape then answer the question. Whose handbag is it?
@@ -19,6 +22,8 @@ Thank you very much.
    Question: Whose handbag is it?
    Answer: This handbag is the woman's.
 {% endnote %}
+
+<!-- more -->
 
 ## New words and expressions
 
@@ -123,4 +128,4 @@ Thank you very much.
 
 3. 拼读规律
    一辅一元，前辅后元。
-      
+
