@@ -87,6 +87,8 @@ menu:
       default: ../Jest/
     Webpack:
       default: ../Webpack/
+    MSW:
+      default: ../msw/
     third party:
       default: ../third-party/
   NCE: /nce/ || fa fa-book
