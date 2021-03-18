@@ -91,7 +91,7 @@ menu:
       default: ../msw/
     third party:
       default: ../third-party/
-  NCE: /nce/ || fa fa-book
+  # NCE: /nce/ || fa fa-book
   tags: /tags/ || fa fa-tags
   categories: /categories/ || fa fa-th
   archives: /archives/ || fa fa-archive
