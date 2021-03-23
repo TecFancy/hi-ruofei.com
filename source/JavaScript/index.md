@@ -40,7 +40,7 @@ comments: false
 
    4.1 `Object`
 
-   4.2 `Array`
+   4.2 [`Array`](/JavaScript/array/)
 
    4.3 定型数组
 
