@@ -5,4 +5,5 @@ description: Array
 comments: false
 ---
 
-1. [迭代器方法](/post/56796ee0/)
+1. [检测数组](/post/834f359e/)
+2. [迭代器方法](/post/56796ee0/)
