@@ -606,20 +606,20 @@ changyan:
 # Valine
 # For more information: https://valine.js.org, https://github.com/xCss/Valine
 valine:
-  enable: false
-  appId: # Your leancloud application appid
-  appKey: # Your leancloud application appkey
-  serverURLs: # When the custom domain name is enabled, fill it in here
+  enable: true
+  appId: 07EafDVccNlmKPoLwsJ7kUqy-gzGzoHsz # Your leancloud application appid
+  appKey: WQvMNkDxhW0E8FO6gtVgxfBF # Your leancloud application appkey
+  serverURLs: leancloud.hi-ruofei.com # When the custom domain name is enabled, fill it in here
   placeholder: Just go go # Comment box placeholder
   avatar: mm # Gravatar style
   meta: [nick, mail, link] # Custom comment header
   pageSize: 10 # Pagination size
-  lang: # Language, available values: en, zh-cn
-  visitor: false # Article reading statistic
+  lang: zh-cn # Language, available values: en, zh-cn
+  visitor: true # Article reading statistic
   comment_count: true # If false, comment count will only be displayed in post page, not in home page
   recordIP: false # Whether to record the commenter IP
-  enableQQ: false # Whether to enable the Nickname box to automatically get QQ Nickname and QQ Avatar
-  requiredFields: [] # Set required fields: [nick] | [nick, mail]
+  enableQQ: true # Whether to enable the Nickname box to automatically get QQ Nickname and QQ Avatar
+  requiredFields: [nick, mail] # Set required fields: [nick] | [nick, mail]
 
 # LiveRe comments system
 # You can get your uid from https://livere.com/insight/myCode (General web site)
@@ -628,7 +628,7 @@ livere_uid: # <your_uid>
 # Gitalk
 # For more information: https://gitalk.github.io, https://github.com/gitalk/gitalk
 gitalk:
-  enable: true
+  enable: false
   github_id: smpower # GitHub repo owner
   repo: comments_hi-ruofei.com # Repository name to store issues
   client_id: 3d8a5b49b6c7a1fdecb7 # GitHub Application Client ID
