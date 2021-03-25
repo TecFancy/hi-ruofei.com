@@ -194,10 +194,10 @@ toc:
 # Firstly, you need enable the chat service you want to activate its sidebar button.
 chat:
   enable: false
-  #service: chatra
+  service: chatra
   #service: tidio
   icon: fa fa-comment # Icon name in Font Awesome, set false to disable icon.
-  text: Chat # Button text, change it as you wish.
+  text: 来聊天啊 # Button text, change it as you wish.
 
 # ---------------------------------------------------------------
 # Footer Settings
@@ -753,10 +753,12 @@ local_search:
 # Chatra Support
 # See: https://chatra.io
 # Dashboard: https://app.chatra.io/settings/general
+# username: rf.wangchn@foxmail.com
+# password: Yuqian521!!
 chatra:
   enable: false
   async: true
-  id: # Visit Dashboard to get your ChatraID
+  id: v3PDHxqboSastHFPy # Visit Dashboard to get your ChatraID
   #embed: # Unfinished experimental feature for developers. See: https://chatra.io/help/api/#injectto
 
 # Tidio Support
