@@ -8,6 +8,8 @@ comments: false
 
 - 添加看板娘
 - sidebar 添加 Netlify 链接
+- 配置第三方工具：[Widgetpack](https://widgetpack.com)
+- 安装 ShareButton
 
 ## 2021.03.19
 

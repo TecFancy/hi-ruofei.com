@@ -659,12 +659,12 @@ utterances:
 # To get your ID visit https://widgetpack.com
 rating:
   enable: false
-  id: # <app_id>
+  id: 29856 # <app_id>
   color: "#fc6423"
 
 # AddThis Share. See: https://www.addthis.com
 # Go to https://www.addthis.com/dashboard to customize your tools.
-add_this_id:
+add_this_id: ra-5e3282201b843dd7
 
 # ---------------------------------------------------------------
 # Statistics and Analytics
