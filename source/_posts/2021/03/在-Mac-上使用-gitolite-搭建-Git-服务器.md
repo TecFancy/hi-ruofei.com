@@ -15,6 +15,8 @@ tags: gitolite
 
 使用 `ssh-keygen` 命令生成 ssh key：
 
+<!-- more -->
+
 ``` bash
 $ ssh-keygen -t rsa -b 4096
 Generating public/private rsa key pair.
