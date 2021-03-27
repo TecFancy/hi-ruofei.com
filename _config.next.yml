@@ -632,7 +632,7 @@ gitalk:
   github_id: smpower # GitHub repo owner
   repo: comments_hi-ruofei.com # Repository name to store issues
   client_id: 3d8a5b49b6c7a1fdecb7 # GitHub Application Client ID
-  client_secret: 60f9bcb98cd54302ca29c0364bca0af72cdf144c # GitHub Application Client Secret
+  client_secret: c496644d5a99f6042794eb2dd2e059713005eae2 # GitHub Application Client Secret
   admin_user: smpower # GitHub repo owner and collaborators, only these guys can initialize gitHub issues
   distraction_free_mode: true # Facebook-like distraction free mode
   # Gitalk's display language depends on user's browser or system environment
