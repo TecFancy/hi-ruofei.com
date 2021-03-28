@@ -177,6 +177,7 @@ links_settings:
 links:
   站长: https://ziyuan.baidu.com/dashboard/index?site=https://hi-ruofei.com/
   统计: https://tongji.baidu.com/web/10000139264/homepage/index
+  Google Search Console: https://search.google.com/search-console?resource_id=sc-domain%3Ahi-ruofei.com
 
 # Table of Contents in the Sidebar
 # Front-matter variable (unsupport wrap expand_all).
@@ -536,7 +537,7 @@ pangu: false
 # For more information: https://github.com/GoogleChromeLabs/quicklink
 # Front-matter variable (unsupport home archive).
 quicklink:
-  enable: false
+  enable: true
 
   # Home page and archive page can be controlled through home and archive options below.
   # This configuration item is independent of `enable`.
