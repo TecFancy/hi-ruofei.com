@@ -629,7 +629,7 @@ livere_uid: # <your_uid>
 # Gitalk
 # For more information: https://gitalk.github.io, https://github.com/gitalk/gitalk
 gitalk:
-  enable: true
+  enable: false
   github_id: smpower # GitHub repo owner
   repo: comments_hi-ruofei.com # Repository name to store issues
   client_id: 3d8a5b49b6c7a1fdecb7 # GitHub Application Client ID
@@ -644,7 +644,7 @@ gitalk:
 # Utterances
 # For more information: https://utteranc.es
 utterances:
-  enable: false
+  enable: true
   repo: smpower/comments_hi-ruofei.com # Github repository name
   # Available values: pathname | url | title | og:title
   issue_term: title
