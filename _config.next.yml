@@ -97,6 +97,7 @@ menu:
   archives: /archives/ || fa fa-archive
   #schedule: /schedule/ || fa fa-calendar
   update log: /update-log/ || fa fa-clock
+  feedback: /feedback/ || fa fa-comment
   sitemap: /sitemap.xml || fa fa-sitemap
   #commonweal: /404/ || fa fa-heartbeat
 
