@@ -588,14 +588,15 @@ disqus:
 # Demo: https://suka.js.org/DisqusJS/
 # For more information: https://github.com/SukkaW/DisqusJS
 disqusjs:
-  enable: true
+  enable: false
   # API Endpoint of Disqus API (https://disqus.com/api/).
   # Leave api empty if you are able to connect to Disqus API. Otherwise you need a reverse proxy for it.
   # For example:
   # api: https://disqus.skk.moe/disqus/
-  api: https://disqus.ruofei.site/api/ # https://disqus.skk.moe/disqus/ # 应该配置一个 Disqus API 的反代并填入反代的地址
+  api: https://disqus-com.rf-wangchn.workers.dev/api/ # https://disqus.skk.moe/disqus/ # 应该配置一个 Disqus API 的反代并填入反代的地址
   apikey: 1b2z3PA6bmgrWBrdlTb4p68Gluerm7bQFtu2t9DjdG8MpubhAu87zSvzbVSOHK90 # Register new application from https://disqus.com/api/applications/
   shortname: ruofei # See: https://disqus.com/admin/settings/general/
+  embed: disqus-com.rf-wangchn.workers.dev
 
 # Changyan
 changyan:
@@ -628,7 +629,7 @@ livere_uid: # <your_uid>
 # Gitalk
 # For more information: https://gitalk.github.io, https://github.com/gitalk/gitalk
 gitalk:
-  enable: false
+  enable: true
   github_id: smpower # GitHub repo owner
   repo: comments_hi-ruofei.com # Repository name to store issues
   client_id: 3d8a5b49b6c7a1fdecb7 # GitHub Application Client ID
@@ -644,9 +645,9 @@ gitalk:
 # For more information: https://utteranc.es
 utterances:
   enable: false
-  repo: smpower/comment_hi-ruofei.com # Github repository name
+  repo: smpower/comments_hi-ruofei.com # Github repository name
   # Available values: pathname | url | title | og:title
-  issue_term: pathname
+  issue_term: title
   # Available values: github-light | github-dark | preferred-color-scheme | github-dark-orange | icy-dark | dark-blue | photon-dark | boxy-light
   # theme: github-ligh
 
