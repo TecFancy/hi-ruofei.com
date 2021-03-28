@@ -565,11 +565,11 @@ comments:
   style: tabs
   # Choose a comment system to be displayed by default.
   # Available values: changyan | disqus | disqusjs | gitalk | livere | valine
-  active:
+  active: twikoo
   # Setting `true` means remembering the comment system selected by the visitor.
   storage: true
   # Lazyload all comment systems.
-  lazyload: false
+  lazyload: true
   # Modify texts or order for any navs, here are some examples.
   nav:
     #disqus:
@@ -651,6 +651,12 @@ utterances:
   issue_term: title
   # Available values: github-light | github-dark | preferred-color-scheme | github-dark-orange | icy-dark | dark-blue | photon-dark | boxy-light
   # theme: github-ligh
+
+twikoo:
+  enable: true
+  visitor: true
+  envId: hi-ruofei-6g1b9sje4f96bbef # 腾讯云环境id
+  # region: ap-guangzhou # 环境地域，默认为 ap-shanghai
 
 # ---------------------------------------------------------------
 # Post Widgets & Content Sharing Services
