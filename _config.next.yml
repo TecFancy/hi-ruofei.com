@@ -697,7 +697,7 @@ growingio_analytics: # <project_id>
 # AppID and AppKey are recommended to be the same as valine's for counter compatibility.
 # Warning: Do not enable both `valine.visitor` and `leancloud_visitors`.
 leancloud_visitors:
-  enable: true
+  enable: false
   app_id: yhsadYCoH6wWioSsv1wQ9sHy-gzGzoHsz # <your app id>
   app_key: UTo4ARICgLOSiyxPgX03WlRp # <your app key>
   # Required for apps from CN region
