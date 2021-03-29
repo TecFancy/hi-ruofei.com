@@ -35,10 +35,14 @@ jobs:
           npm install hexo-cli yarn -g
           yarn
 
-      - name: Deploy 2 Github
+      - name: Deploy 2 Github Pages (repo - smpower.github.io)
         run: |
           hexo clean
           hexo deploy
+
+      - name: Deploy 2 vercel
+        run: |
+        curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_jvK46JFFF8UCRDL3ajLZWzN5USGz/mPfwYBtppT
       
       # - name: Depoly 2 tcb # Tencent Cloudbase
       #   run: |
