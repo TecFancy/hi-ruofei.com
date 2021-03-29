@@ -42,4 +42,4 @@ jobs:
 
       - name: Deploy 2 vercel
         run: |
-        curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_jvK46JFFF8UCRDL3ajLZWzN5USGz/mPfwYBtppT
+          curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_jvK46JFFF8UCRDL3ajLZWzN5USGz/mPfwYBtppT
