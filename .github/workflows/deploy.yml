@@ -43,8 +43,3 @@ jobs:
       - name: Deploy 2 vercel
         run: |
         curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_jvK46JFFF8UCRDL3ajLZWzN5USGz/mPfwYBtppT
-      
-      # - name: Depoly 2 tcb # Tencent Cloudbase
-      #   run: |
-      #     yarn tcb login --apiKeyId AKID96JRM41IeT9cv0s0IMfnj06MeCZ9Knxu --apiKey zOnVaCpbSTOBmCRUt2AVmCWzPeebU9Zf
-      #     yarn tcb hosting deploy ./public -e hexo-blog-1gqvz4yy54676e17
