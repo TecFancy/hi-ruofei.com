@@ -1,9 +1,11 @@
 hexo.extend.generator.register(
   "baidu_url_generator",
-  require("./baiduUrlSubmitter/generator")
+  require("./baidu-url-submitter/generator")
 );
 
 hexo.extend.deployer.register(
   "baidu_url_submitter",
-  require("./baiduUrlSubmitter/submitter")
+  require("./baidu-url-submitter/submitter")
 );
+
+hexo.extend.tag.register("codepen", require("./code-pen"));
