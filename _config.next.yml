@@ -96,6 +96,7 @@ menu:
   categories: /categories/ || fa fa-th
   archives: /archives/ || fa fa-archive
   #schedule: /schedule/ || fa fa-calendar
+  links: /links/ || fa fa-globe
   update log: /update-log/ || fa fa-clock
   feedback: /feedback/ || fa fa-comment
   sitemap: /sitemap.xml || fa fa-sitemap
@@ -169,16 +170,17 @@ social_icons:
 
 # Blog rolls
 links_settings:
-  icon: fa fa-globe
-  title: 网址导航
+  icon: # fa fa-globe
+  title: # 网址导航
   # Available values: block | inline
-  layout: inline
+  layout: # inline
 
 links:
-  站长: https://ziyuan.baidu.com/dashboard/index?site=https://hi-ruofei.com/
-  统计: https://tongji.baidu.com/web/10000139264/homepage/index
-  Google Search Console: https://search.google.com/search-console?resource_id=sc-domain%3Ahi-ruofei.com
-  云开发 CloudBase: https://console.cloud.tencent.com/tcb/env/overview
+  # 站长: https://ziyuan.baidu.com/dashboard/index?site=https://hi-ruofei.com/
+  # 统计: https://tongji.baidu.com/web/10000139264/homepage/index
+  # Google Search Console: https://search.google.com/search-console?resource_id=sc-domain%3Ahi-ruofei.com
+  # Vercel: https://vercel.com
+  # 云开发 CloudBase: https://console.cloud.tencent.com/tcb/env/overview
 
 # Table of Contents in the Sidebar
 # Front-matter variable (unsupport wrap expand_all).
