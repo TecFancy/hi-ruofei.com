@@ -32,13 +32,13 @@ $ yarn add msw --dev
 2. 创建 `src/mocks/handler.js` 文件：
 
    ```bash
-   $ touch src/mocks/handler.js
+   $ touch src/mocks/handlers.js
    ```
 
 3. 从 `msw` 导入 `rest` :
 
    ```js
-   // src/mocks/handler.js
+   // src/mocks/handlers.js
    import { rest } from "msw";
    ```
 
@@ -48,15 +48,15 @@ $ yarn add msw --dev
 - `GET /user`，返回登录用户的信息。
 
 ```js
-// src/mocks/handler.js
-import { rest } from 'msw';
+// src/mocks/handlers.js
+import { rest } from "msw";
 
 export const handlers = [
   // Handles a POST /login request
-  rest.post('/login', null);
+  rest.post("/login", null),
 
   // Handles a GET /user request
-  rest.get('/user', null);
+  rest.get("/user", null),
 ];
 ```
 
@@ -73,7 +73,7 @@ import { rest } from "msw";
 export const handlers = [
   rest.post("/login", (req, res, ctx) => {
     // Persist user's authentication in the session
-    sessionStorage.setItem("is-authenticated", true);
+    sessionStorage.setItem("is-authenticated", "true");
 
     return res(
       // Respond with a 200 status code
@@ -108,7 +108,7 @@ export const handlers = [
 
 ## 集成
 
-上面的 `src/mocks/handler.js` 文件在 Browser 和 Node 环境是通用的。因为 Service Worder 不支持在 Node 中运行，所以集成过程因环境而异。
+上面的 `src/mocks/handlers.js` 文件在 Browser 和 Node 环境是通用的。因为 Service Worder 不支持在 Node 中运行，所以集成过程因环境而异。
 
 ### 集成到 Browser 环境
 
