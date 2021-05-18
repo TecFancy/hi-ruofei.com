@@ -1,10 +1,9 @@
 ---
 title: 在 vscode 中离线安装扩展的方法
-abbrlink: b874373c
-date: 2020-04-29 10:40:44
 tags: vscode
 categories:
   - 开发工具
+date: 2020-04-29 10:40:44
 ---
 
 明明可以在线安装 vscode 扩展，为什么要使用离线的方式安装呢？在线安装它不香嘛～
@@ -49,8 +48,8 @@ categories:
 
 在命令行中执行以下命令：
 
-``` bash
+```bash
 code --install-extension ./MS-CEINTL.vscode-language-pack-zh-hans-1.46.0.vsix
 ```
 
-到这里我们就成功安装上简体中文离线扩展包文件啦～ 安装其他扩展也是同样的步骤。遇到任何问题欢迎在下方留言讨论哦 ^_^
+到这里我们就成功安装上简体中文离线扩展包文件啦～ 安装其他扩展也是同样的步骤。遇到任何问题欢迎在下方留言讨论哦 ^\_^

@@ -1,12 +1,11 @@
 ---
 title: JavaScript 之检测数组
-abbrlink: 834f359e
-date: 2021-03-24 22:47:50
 categories: JavaScript
 tags:
   - JavaScript 语法
   - JavaScript 集合引用类型
   - JavaScript Array
+date: 2021-03-24 22:47:50
 ---
 
 要判断一个对象是不是数组，ECMAScript 提供了 2 种检测方式，他们分别是：
@@ -18,7 +17,7 @@ tags:
 
 在只有一个全局作用域的情况下，使用 `instanceof` 操作符即可：
 
-``` js
+```js
 if (value instanceof Array) {
   // 操作数组
 }
@@ -28,9 +27,8 @@ if (value instanceof Array) {
 
 为了解决这个问题，ECMAScript 提供了 `Array.isArray()` 方法。这个方法的作用就是确定一个值是否为数组，而不用管它是在哪个全局上下文中创建的。下面是一个例子：
 
-``` js
+```js
 if (Array.isArray(value)) {
   // 操作数组
 }
 ```
-

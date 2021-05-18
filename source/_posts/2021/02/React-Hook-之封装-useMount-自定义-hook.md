@@ -5,13 +5,12 @@ tags:
   - React Hooks
   - React 钩子函数
   - React 自定义 Hook
-abbrlink: 4d20296b
 date: 2021-02-22 13:49:34
 ---
 
 下面是一个使用 React 编写的函数式组件：
 
-``` jsx
+```jsx
 /**
  * user-list.jsx
  */
@@ -29,7 +28,7 @@ const UserList = () => {
       }
     });
   }, []);
-  
+
   return (
     <ul>
       {users ? users.map((user) => (
@@ -46,16 +45,16 @@ export default UserList;
 
 当组件 `UserList` 初次加载时，调用了一次获取用户数据的接口，该接口的返回值用来渲染页面上的用户列表。`useEffect` 函数的第二个参数就表示这个 hook 在组件渲染到页面后只会调用一次，可以编写一个自定义 hook 将这种只执行一次的 effect 抽象成自定义 hook。
 
-``` jsx
+```jsx
 /**
  * use-mount.jsx
  */
 
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 
-const useMount = callback => {
+const useMount = (callback) => {
   useEffect(() => {
-    if (callback && typeof callback === 'function') {
+    if (callback && typeof callback === "function") {
       callback();
     }
   }, []);
@@ -66,7 +65,7 @@ export default useMount;
 
 调用 `useMount` 自定义 hook 时传入一个函数作为参数，`useMount` 会去执行这个回调函数，并且只会在组件渲染到页面后只执行一次。使用方法：
 
-``` jsx
+```jsx
 /**
  * user-list.jsx
  */
@@ -85,7 +84,7 @@ const UserList = () => {
       }
     });
   });
-  
+
   return (
     <ul>
       {users ? users.map((user) => (

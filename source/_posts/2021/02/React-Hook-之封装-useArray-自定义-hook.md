@@ -1,12 +1,11 @@
 ---
 title: React Hook 之封装 useArray 自定义 hook
-abbrlink: 9499c45d
-date: 2021-02-22 17:23:17
 categories: React
 tags:
   - React Hooks
   - React 钩子函数
   - React 自定义 Hook
+date: 2021-02-22 17:23:17
 ---
 
 在对数组操作时，我们经常要执行新增或删除数组元素的操作，将一些常用的数组操作封装成 React 自定义 hook 使用会非常方便。下面将封装一个自定义的 `useArray` React hook，实现数组的取值、设置值、添加、删除和清理数组的功能。

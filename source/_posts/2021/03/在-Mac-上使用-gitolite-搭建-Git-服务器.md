@@ -1,6 +1,5 @@
 ---
 title: 在 Mac 上使用 gitolite 搭建 Git 服务器
-abbrlink: 952aa112
 date: 2021-03-26 18:21:48
 categories: Git
 tags: gitolite
@@ -17,7 +16,7 @@ tags: gitolite
 
 <!-- more -->
 
-``` bash
+```bash
 $ ssh-keygen -t rsa -b 4096
 Generating public/private rsa key pair.
 Enter file in which to save the key (/Users/<username>/.ssh/id_rsa):
@@ -50,27 +49,30 @@ The key's randomart image is:
 
 在 iCloud 中创建一个名为 `repositories` 的文件夹，打开终端，cd 到 iCloud 根目录下：
 
-``` bash
+```bash
 $ /Users/<username>/Library/Mobile\ Documents/com~apple~CloudDocs/
 ```
 
 创建 `repositories` 目录的软连接到当前登录用户的家目录下的 `repositories` 目录：
 
-``` bash
+```bash
 $ sudo ln -s /Users/<username>/Library/Mobile\ Documents/com\~apple\~CloudDocs/repositories/ /Users/git/repositories
 ```
 
 下面测试一下 iCloud 的同步功能是否正常。cd 到 `/Users/git/repositories` 目录下，创建一个名为 `test` 的测试文件：
 
-``` bash
+```bash
 $ cd /Users/<username>/repositories && touch test
 ```
 
 接下来，打开 iCloud 中的 `repositories` 文件夹，如果能看到我们刚才创建的这个 `test` 文件，就说明 iCloud 的同步功能是正常的。
 
 {% tabs 测试 iCloud 同步功能是否正常, 0 %}
+
 <!-- tab /Users/git/repositories/ 目录下的内容 -->
+
 ![](https://gitee.com/smpower/oss/raw/master/hi-ruofei.com/fozuqm.png)
+
 <!-- endtab -->
 
 <!-- tab iCloud 中 repositories 目录下的内容 -->
@@ -85,28 +87,28 @@ $ cd /Users/<username>/repositories && touch test
 
 首先，克隆 gitolite 的源码：
 
-``` bash
-$ git clone https://github.com/sitaramc/gitolite 
+```bash
+$ git clone https://github.com/sitaramc/gitolite
 # 如果克隆 github 上的仓库失败，可以通过国内镜像仓库克隆，速度快很多
 # git clone https://gitee.com/mirrors/gitolite.git
 ```
 
 克隆源码后建立 gitolite 软连接：
 
-``` bash
+```bash
 $ mkdir -p ~/bin
 $ gitolite/install -ln /Users/<username>/bin # 需使用绝对路径
 ```
 
 再将 `gitolite` 追加到 `.bash_profile` 中：
 
-``` bash
+```bash
 export PATH=/Users/<username>/bin:$PATH # 如果用 zsh 那就将这句话添加到 .bashrc 文件，注意将 <username> 替换成你的用户名
 ```
 
 最后设置管理员用户共钥：
 
-``` bash
+```bash
 $ gitolite setup -pk YourName.pub # 这里的 YourName.pub 就是之前生成的共钥（ssh key），通常叫做 id_rsa.pub
 ```
 
@@ -121,13 +123,13 @@ $ gitolite setup -pk YourName.pub # 这里的 YourName.pub 就是之前生成的
 
 因为我们是在本地搭建的 gitolite，所以还要在当前管理员用户的 `.ssh` 目录下创建一个配置文件 config：
 
-``` bash
+```bash
 $ vim ~/.ssh/config
 ```
 
 config 文件中填写：
 
-``` bash
+```bash
 Host local # local 就表示本机（127.0.0.1）
     HostName 127.0.0.1
     IdentityFile ~/.ssh/id_rsa
@@ -137,7 +139,7 @@ Host local # local 就表示本机（127.0.0.1）
 
 将 `gitolite-admin.git` 仓库克隆下来：
 
-``` bash
+```bash
 git clone <username>@local:gitolite-admin.git # <username> 是你的用户名
 ```
 
@@ -158,4 +160,4 @@ git clone <username>@local:gitolite-admin.git # <username> 是你的用户名
 ## 参考
 
 - [Gitolite](https://gitolite.com/)
-- [45.在Mac上使用gitolite搭建Git服务器](https://blog.csdn.net/a464057216/article/details/52644021)
+- [45.在 Mac 上使用 gitolite 搭建 Git 服务器](https://blog.csdn.net/a464057216/article/details/52644021)

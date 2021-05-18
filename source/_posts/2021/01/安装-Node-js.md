@@ -1,7 +1,6 @@
 ---
 title: 安装 Node.js
 categories: Node.js
-abbrlink: ad163972
 date: 2021-01-27 23:20:20
 tags:
 ---
@@ -18,14 +17,14 @@ tags:
 
 在 MacOS 上，可通过 Homebrew 安装：
 
-``` bash
+```bash
 brew install node
 ```
 
 {% note info %}
 安装 Homebrew 总是失败怎么办？
 
-``` bash
+```bash
 /bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"
 ```
 
@@ -40,7 +39,7 @@ nvm 是一种流行的运行 Node.js 的方式，使用 nvm 可轻松地切换 N
 
 无论哪种方式，当安装 Node.js 之后，就可以在命令行中访问 `node` 可执行程序和 `npm` 包管理器。
 
-``` bash
+```bash
 $ node -v
 v14.15.3
 

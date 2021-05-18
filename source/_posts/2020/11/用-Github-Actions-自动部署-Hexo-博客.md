@@ -4,7 +4,6 @@ tags:
   - Hexo
 categories:
   - 博客
-abbrlink: '23472701'
 date: 2020-11-23 22:18:24
 ---
 
@@ -24,7 +23,7 @@ date: 2020-11-23 22:18:24
 
 打开 Hexo 的配置文件 `_config.yml`，确保配置文件中有以下配置：
 
-``` yml
+```yml
 deploy:
   type: git
   repository: git@github.com:smpower/smpower.github.io.git
@@ -41,7 +40,7 @@ deploy:
 
 这里我们生成的密钥是用在仓库中的。
 
-``` bash
+```bash
 ssh-keygen -t rsa -b 4096 -C "Hexo Deploy Key" -f github-deploy-key-hi-ruofei-com -N ""
 ```
 
@@ -104,7 +103,7 @@ ssh-keygen -t rsa -b 4096 -C "Hexo Deploy Key" -f github-deploy-key-hi-ruofei-co
 
 首先在 Hexo 的仓库中创建一个新文件：.github/workflows/deploy.yml，文件名可以自己取，但是一定要放在 .github/workflows 目录中，文件的内容如下：
 
-``` yml
+```yml
 name: Hexo Deploy
 
 on:
@@ -126,7 +125,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: '14.x'
+          node-version: "14.x"
 
       - name: Setup Hexo
         env:

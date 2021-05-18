@@ -1,16 +1,14 @@
 ---
 title: typescript 中的联合类型和类型保护
 tags: TypeScript
-abbrlink: e20d5a03
 date: 2020-12-31 22:36:14
 ---
-
 
 下面通过一个简单的例子来说明 typescript 中的联合类型。
 
 先来两只小动物：Bird 和 Dog。我们都知道，小鸟会叫、会飞，小狗会叫但是不会飞，根据它们的这两种属性我们就能定义两个接口，如下：
 
-``` ts
+```ts
 interface Bird {
   fly: boolean;
   sing: () => {}; // 小鸟唱歌
@@ -26,7 +24,7 @@ interface Dog {
 
 定义好了接口，那我们就来训练一下这两只小动物吧。下面我们定义一个函数 `trainAnimal`，该函数接收一个形参 `animal`，如果这个参数可以指 `Bird` 也可以指 `Dog`，那么我们可以这样写：
 
-``` ts
+```ts
 function(animal: Bird | Dog) {
   // do something...
 }
@@ -40,7 +38,7 @@ function(animal: Bird | Dog) {
 
 类型断言说：如果你会飞，你就是小鸟；如果不会飞，那你就是小狗！
 
-``` ts
+```ts
 function(animal: Bird | Dog) {
   if (animal.fly) {
     (animal as Bird).sing();
@@ -56,9 +54,9 @@ function(animal: Bird | Dog) {
 
 `in` 语法要比上面的类型断言方式简单多了，不用我们额外判断方法传入的参数中是否存在 `fly` 属性。
 
-``` ts
+```ts
 function trainAnimal(animal: Bird | Dog) {
-  if ('sing' in animal) animal.sing();
+  if ("sing" in animal) animal.sing();
   else animal.bark();
 }
 ```

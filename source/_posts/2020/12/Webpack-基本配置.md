@@ -1,7 +1,6 @@
 ---
 title: Webpack 基本配置
 tags: Webpack
-abbrlink: '75208998'
 date: 2020-12-13 16:41:15
 ---
 
@@ -9,7 +8,7 @@ date: 2020-12-13 16:41:15
 
 首先我们创建一个目录，初始化 npm，然后在本地安装 webpack，接着安装 `webpack-cli`：
 
-``` bash
+```bash
 mkdir webpack-demo
 cd webpack-demo
 npm init -y
@@ -25,8 +24,10 @@ npm install webpack webpack-cli html-webpack-plugin --save-dev # 或 yarn add --
 现在，我们将创建以下目录结构、文件和内容：
 
 {% tabs 初始化项目目录 %}
+
 <!-- tab project -->
-``` none
+
+```none
 webpack-demo
 |- package.json
 |- config/
@@ -41,7 +42,8 @@ webpack-demo
 
 <!-- endtab -->
 <!-- tab package.json -->
-``` json
+
+```json
 {
   "name": "webpack-demo",
   "version": "0.1.0",
@@ -65,7 +67,8 @@ webpack-demo
 
 <!-- endtab -->
 <!-- tab public/index.html -->
-``` html
+
+```html
 <!DOCTYPE html>
 <html lang="zh">
   <head>
@@ -83,20 +86,22 @@ webpack-demo
 
 <!-- endtab -->
 <!-- tab src/index.js -->
-``` js
+
+```js
 console.log("Hello world.");
 ```
 
 这就是我们项目的入口文件了。
 
 <!-- endtab -->
+
 {% endtabs %}
 
 ## Webpack 基本配置
 
 在 config 目录下的 webpack.config.js 文件中填写以下内容：
 
-``` js
+```js
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
@@ -122,7 +127,7 @@ module.exports = {
 
 执行 `npm run build` 或 `yarn build`：
 
-``` bash
+```bash
 $ npm run build
 [webpack-cli] Compilation finished
 asset index.html 225 bytes [emitted]
@@ -134,7 +139,7 @@ webpack 5.10.1 compiled successfully in 259 ms
 
 编译结束后，项目根目录项会被创建出一个 dist 目录，目录结构应该是这样的：
 
-``` none
+```none
 dist/
 |- index.html
 |- main.js

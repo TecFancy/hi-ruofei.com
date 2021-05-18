@@ -1,12 +1,11 @@
 ---
 title: JavaScript 基础语法
-abbrlink: 5f0515fe
-date: 2021-01-17 17:10:20
 tags: JavaScript 语法
 categories: JavaScript
+date: 2021-01-17 17:10:20
 ---
 
-ECMAScript的语法大量借鉴了C及其他类C语言（如Java和Perl）的语法，而 ECMAScript 语法相对其他语言的语法要更加宽松。
+ECMAScript 的语法大量借鉴了 C 及其他类 C 语言（如 Java 和 Perl）的语法，而 ECMAScript 语法相对其他语言的语法要更加宽松。
 
 <!-- more -->
 
@@ -23,15 +22,15 @@ ECMAScript 中的一切（变量、函数名和操作符）都区分大小写。
 
 按照惯例，书写标识符应采用驼峰大小写格式。例如：
 
-``` javascript
-myHouse
-doSomething
-firstNumber
+```javascript
+myHouse;
+doSomething;
+firstNumber;
 ```
 
 {% note info %}
 
-  不能把关键字、保留字、`true`、`false` 和 `null` 用作标识符。
+不能把关键字、保留字、`true`、`false` 和 `null` 用作标识符。
 
 {% endnote %}
 
@@ -39,13 +38,13 @@ firstNumber
 
 ECMAScript 中有两风格的注释，分别是单行注释和块级注释。例如：
 
-``` javascript
+```javascript
 // 单行注释
 ```
 
 块级注释以一个斜杠和一个星号（`/*`）开头，以一个星号和一个斜杠（`*/`）结尾。例如：
 
-``` javascript
+```javascript
 /*
  * 多行注释
  * （块级）注释
@@ -58,13 +57,13 @@ ECMAScript 中有两风格的注释，分别是单行注释和块级注释。例
 
 要在脚本中启用严格模式，可以在文件顶部添加以下代码：
 
-``` javascript
+```javascript
 "use strict";
 ```
 
 除此以外，还可以在函数内部启用严格模式，指示该函数在严格模式下运行：
 
-``` javascript
+```javascript
 function doSomething() {
   "use strict";
   // do something...
@@ -75,7 +74,7 @@ function doSomething() {
 
 ECMAScript 中的语句以一个英文分号（`;`）结尾；若省略分号，则由解析器确定语句的结尾。例如：
 
-``` javascript
-const sum = a + b // 没有分号也不要紧，但是不推荐这样的写法
+```javascript
+const sum = a + b; // 没有分号也不要紧，但是不推荐这样的写法
 const diff = a - b; // 推荐每条语句后都要写分号
 ```

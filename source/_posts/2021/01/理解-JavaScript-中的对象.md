@@ -1,20 +1,19 @@
 ---
 title: 理解 JavaScript 中的对象
-abbrlink: d282b4bc
-date: 2021-01-17 22:00:43
 tags: JavaScript 中的对象、类和面向对象编程
 categories: JavaScript
+date: 2021-01-17 22:00:43
 ---
 
 通常，通过创建 `Object` 的一个实例来创建自定义对象，然后再给它添加属性和方法。例如：
 
-``` js
+```js
 const person = new Object();
-person.name = 'Olive';
+person.name = "Olive";
 person.age = 18;
-person.gender = 'female';
-person.job = 'Frontend Engineer';
-person.sayName = function() {
+person.gender = "female";
+person.job = "Frontend Engineer";
+person.sayName = function () {
   console.log(this.name);
 };
 ```
@@ -25,13 +24,13 @@ person.sayName = function() {
 
 ```js
 const person = {
-  name: 'Olive',
+  name: "Olive",
   age: 18,
-  gender: 'female',
-  job: 'Frontend Engineer',
+  gender: "female",
+  job: "Frontend Engineer",
   sayName() {
     console.log(this.name);
-  }
+  },
 };
 ```
 
@@ -49,17 +48,17 @@ const person = {
 
 - `[[Configurable]]`：表示属性是否可以通过 `delete` 删除属性，是否可以修改它的特性，以及是否可以把它改为访问器属性。默认情况下，所有直接定义在对象上的属性的这个特性都是 `true`。例如：
 
-  ``` js
+  ```js
   const person = {
-    name: 'Olive',
+    name: "Olive",
     age: 18,
-    gender: 'female',
-    job: 'Frontend Engineer',
+    gender: "female",
+    job: "Frontend Engineer",
     sayName() {
       console.log(this.name);
-    }
+    },
   };
-  Object.defineProperty(person, 'name', {
+  Object.defineProperty(person, "name", {
     configurable: false,
   });
   delete person.name;
@@ -70,20 +69,20 @@ const person = {
 
   此外，对象上的一个属性被定义为不可配置后，就不能再变回可配置的了。再次调用 `Object.defineProperty()` 并修改任何非 `writable` 属性会导致错误。例如：
 
-  ``` js
+  ```js
   const person = {
-    name: 'Olive',
+    name: "Olive",
     age: 18,
-    gender: 'female',
-    job: 'Frontend Engineer',
+    gender: "female",
+    job: "Frontend Engineer",
     sayName() {
       console.log(this.name);
-    }
+    },
   };
-  Object.defineProperty(person, 'name', {
+  Object.defineProperty(person, "name", {
     configurable: false,
   });
-  Object.defineProperty(person, 'name', {
+  Object.defineProperty(person, "name", {
     configurable: true,
   });
   /**
@@ -96,7 +95,7 @@ const person = {
 
 - `[[Enumerable]]`：表示属性是否可以通过 `for-in` 循环返回。默认情况下，所有直接定义在对象上的属性的这个特性都是 `true`。以 `person` 对象为例：
 
-  ``` js
+  ```js
   for (const key in person) {
     console.log(key);
   }
@@ -104,7 +103,7 @@ const person = {
 
   上面这段代码通过 `for-in` 语句对 `person` 对象执行的遍历操作，会在控制台依次打印出如下结果：
 
-  ``` js
+  ```js
   /**
    * "name"
    * "age"
@@ -118,27 +117,27 @@ const person = {
 
 - `[[Writable]]`：表示属性的值是否可以被修改。默认情况下，所有直接定义在对象上的属性的这个特性都是 `true`。例如：
 
-  ``` js
-  person.name = 'Jack';
+  ```js
+  person.name = "Jack";
   console.log(person.name); // "Jack"
   ```
 
   当对 `person.name` 重新赋值为 `Jack` 后，在控制台打印出的值为 `Jack`。若将 `person.name` 属性上的 `writable` 设置为 `false`，则不能对 `person.name` 属性执行重新赋值的操作。例如：
 
-  ``` js
+  ```js
   const person = {
-    name: 'Olive',
+    name: "Olive",
     age: 18,
-    gender: 'female',
-    job: 'Frontend Engineer',
+    gender: "female",
+    job: "Frontend Engineer",
     sayName() {
       console.log(this.name);
-    }
+    },
   };
-  Object.defineProperty(person, 'name', {
+  Object.defineProperty(person, "name", {
     writable: false,
   });
-  person.name = 'Jack';
+  person.name = "Jack";
   console.log(person.name); // "Olive"
   ```
 
@@ -146,22 +145,22 @@ const person = {
 
 - `[[Value]]`：包含属性实际的值。默认情况下，所有直接定义在对象上的属性的这个特性都是 `true`。例如：
 
-  ``` js
+  ```js
   const person = {
-    name: 'Olive',
+    name: "Olive",
     age: 18,
-    gender: 'female',
-    job: 'Frontend Engineer',
+    gender: "female",
+    job: "Frontend Engineer",
     sayName() {
       console.log(this.name);
-    }
+    },
   };
   Object.defineProperty(person, "name", {
-    value: "Jack"
+    value: "Jack",
   });
   console.log(person.name); // "Jack"
   ```
-  
+
   可以看到 `person.name` 属性值已被修改为 `Jack`。
 
 ### 访问器属性
@@ -175,13 +174,13 @@ const person = {
 
 访问器属性不可直接定义，需通过 `Object.defineProperty()` 实现。例如：
 
-``` js
+```js
 // 定义一个对象，包含伪私有成员 `year_` 和公共成员 `edition`
 const book = {
   year_: 2017,
   edition: 1,
 };
-Object.defineProperty(book, 'year', {
+Object.defineProperty(book, "year", {
   get() {
     return this.year_;
   },
@@ -210,14 +209,14 @@ ECMAScript 提供了 `Object.defineProperties()` 方法允许在一个对象上�
 
 它接收 2 个参数：要添加或修改属性的对象和另一个描述符对象，其属性与要添加或修改的属性一一对应。例如：
 
-``` js
+```js
 let book = {};
 Object.defineProperties(book, {
   year_: {
-    value: 2017
+    value: 2017,
   },
   edition: {
-    value: 1
+    value: 1,
   },
   year: {
     get() {
@@ -228,8 +227,8 @@ Object.defineProperties(book, {
         this.year_ = newValue;
         this.edition += newValue - 2017;
       }
-    }
-  }
+    },
+  },
 });
 ```
 
@@ -237,7 +236,7 @@ Object.defineProperties(book, {
 
 唯一取表就是所有属性是同时定义的，并且数据属性的 `configurable`、`enumerable` 和 `writable` 特性值都为 `false`。因此，当给访问器属性 `year` 重新赋值并不会生效。想要对访问器属性 `year` 重新赋值后仍能更新私有成员 `year_` 和 `edition` 属性，应将对其属性对应的 `writable` 特性设置为 `true`。例如：
 
-``` js
+```js
 let book = {};
 Object.defineProperties(book, {
   year_: {
@@ -257,8 +256,8 @@ Object.defineProperties(book, {
         this.year_ = newValue;
         this.edition += newValue - 2017;
       }
-    }
-  }
+    },
+  },
 });
 book.year = 2020;
 console.log(book.edition); // 4
@@ -291,12 +290,13 @@ Object.defineProperties(book, {
 });
 
 const descriptorOfPrivateYear = Object.getOwnPropertyDescriptor(book, "year_");
-console.log(descriptor.value);        // 2017
+console.log(descriptor.value); // 2017
 console.log(descriptor.configurable); // false
-console.log(typeof descriptor.get);   // "undefined"
+console.log(typeof descriptor.get); // "undefined"
 
-const descriptorOfPublicYear = Object.getOwnPropertyDescriptor(book, "year"); console.log(descriptor.value);      // undefined 
-console.log(descriptor.enumerable); // false 
+const descriptorOfPublicYear = Object.getOwnPropertyDescriptor(book, "year");
+console.log(descriptor.value); // undefined
+console.log(descriptor.enumerable); // false
 console.log(typeof descriptor.get); // "function"
 ```
 
@@ -361,9 +361,9 @@ result = Object.assign(dest, src);
 // Object.assign() 修改目标对象
 // 也会返回修改后的对象
 console.log(dest === result); // true
-console.log(dest !== src);    // true
-console.log(result);          // { id: 'src' }
-console.log(dest);            // { id: 'src' }
+console.log(dest !== src); // true
+console.log(result); // { id: 'src' }
+console.log(dest); // { id: 'src' }
 
 /**
  * 多个源对象
@@ -450,31 +450,31 @@ console.log(dest.name === src.name); // true
 
 ```js
 // 这些是 `===` 符合预期的情况
-console.log(true === 1);  // false
-console.log({} === {});   // false
-console.log("2" === 2);   // false
+console.log(true === 1); // false
+console.log({} === {}); // false
+console.log("2" === 2); // false
 
 // 下面的情况在不同的 js 引擎中表现不同
-console.log(+0 === -0);   // true
-console.log(+0 === 0);    // true
-console.log(-0 === 0);    // true
+console.log(+0 === -0); // true
+console.log(+0 === 0); // true
+console.log(-0 === 0); // true
 
 // 要确定 NaN 的相等性，必须要使用 `isNaN()`
 console.log(NaN === NaN); // false
-console.log(isNaN(NaN));  // true
+console.log(isNaN(NaN)); // true
 ```
 
 为改善上述情况，ES6 规范新增了 `Object.is()` 方法，该方法接收 2 个参数：
 
-``` js
-console.log(Object.is(true, 1));  // false
-console.log(Object.is({}, {}));   // false
-console.log(Object.is("2", 2));   // false
+```js
+console.log(Object.is(true, 1)); // false
+console.log(Object.is({}, {})); // false
+console.log(Object.is("2", 2)); // false
 
 // 正确的 0、+0、-0 相等/不相等判定
-console.log(Object.is(+0, -0));   // false
-console.log(Object.is(+0, 0));    // true
-console.log(Object.is(-0, 0));    // false
+console.log(Object.is(+0, -0)); // false
+console.log(Object.is(+0, 0)); // true
+console.log(Object.is(-0, 0)); // false
 
 // 正确的 `NaN` 相等性判定
 console.log(Object.is(NaN, NaN)); // true
@@ -482,7 +482,7 @@ console.log(Object.is(NaN, NaN)); // true
 
 要检查超过 2 个值，递归地利用相等性判断即可：
 
-``` js
+```js
 function recursivelyCheckEqual(x, ...rest) {
   return (
     Object.is(x, rest[0]) && (rest.length < 2 || recursivelyCheckEqual(...rest))
@@ -497,4 +497,3 @@ const fourth = "Olive";
 const result = recursivelyCheckEqual(first, second, third, fourth);
 console.log(result); // true
 ```
-
