@@ -13,12 +13,12 @@ tags:
 
 <!-- more -->
 
-``` jsx
+```jsx
 /**
  * use-array.tsx
  */
 
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 /**
  * 封装 useArray 自定义 React hook
@@ -29,19 +29,19 @@ import React, { useState } from 'react';
  * @returns {Function} Object.clear 该方法会将传入的数组清空
  * @returns {Function} Object.removeIndex 该方法会将指定的数组元素从数组中移除
  */
-export const useArray = initialArray => {
-  const [value, setValue] = useState(initialArray)
+export const useArray = (initialArray) => {
+  const [value, setValue] = useState(initialArray);
   return {
     value,
     setValue,
-    add: item => setValue([...value, item]),
+    add: (item) => setValue([...value, item]),
     clear: () => setValue([]),
-    removeIndex: index => {
-      const copy = [...value]
+    removeIndex: (index) => {
+      const copy = [...value];
       copy.splice(index, 1);
-      setValue(copy)
-    }
-  }
+      setValue(copy);
+    },
+  };
 };
 ```
 
@@ -55,20 +55,19 @@ export const useArray = initialArray => {
 
 使用方法：
 
-``` jsx
-import React from 'react';
-import useArray from 'use-array';
+```jsx
+import React from "react";
+import useArray from "use-array";
 
 const UserList = () => {
   // { value, setValue, add, clear, removeIndex } = useArray(initialArray);
-  const { value, add } = useArray([{id: 1, name: 'Olive'}, {id: 2, name: 'Jack'}]);
-  add({id: 3, name: 'Amy'});
-  
-  return (
-    <ul>
-      {value ? <li key={value.id}>{value.name}</li> : null}
-    </ul>
-  );
+  const { value, add } = useArray([
+    { id: 1, name: "Olive" },
+    { id: 2, name: "Jack" },
+  ]);
+  add({ id: 3, name: "Amy" });
+
+  return <ul>{value ? <li key={value.id}>{value.name}</li> : null}</ul>;
 };
 
 export default UserList;

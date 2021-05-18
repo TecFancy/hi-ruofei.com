@@ -12,13 +12,12 @@ language: zh-CN
 timezone: ''
 
 # URL
-## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
+## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://hi-ruofei.com
-root: /
-permalink: post/:abbrlink/
-abbrlink: # Abbrlink config
-  alg: crc32  # 算法：crc16(default) and crc32
-  rep: hex    # 进制：dec(default) and he
+permalink: :title_:year:month:day/ # post/:abbrlink/ 
+# abbrlink: # Abbrlink config
+#   alg: crc32  # 算法：crc16(default) and crc32
+#   rep: hex    # 进制：dec(default) and he
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -35,7 +34,7 @@ i18n_dir: :lang
 skip_render:
 
 # Writing
-new_post_name: :year/:month/:title.md # File name of new posts
+new_post_name: :year/:month/:title.md # :title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link:
@@ -109,19 +108,7 @@ search:
   field: all # avaiable value: post(Default) | page | all
   content: true
   format: html # avaiable value: html(Default) | striptags | raw
-
-# symbols_count_time:
-#   symbols: true # 统计单篇文章字数
-#   time: false # 取消估算单篇文章阅读时间
-#   total_symbols: false # 统计站点总字数
-#   total_time: false # 取消估算站点总阅读时间
-
-# 图片懒加载
-lazyload:
-  enable: true
-  onlypost: true
-  # loadingImg:
-
+  
 baidu_url_submit:
   count: 100 ## 提交最新的一个链接
   host: hi-ruofei.com ## 在百度站长平台中注册的域名
@@ -135,3 +122,6 @@ deploy:
   repo: git@github.com:smpower/smpower.github.io.git
   branch: master
 - type: baidu_url_submitter
+
+
+
