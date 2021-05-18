@@ -4,6 +4,10 @@ date: 2021-03-19 22:34:00
 comments: false
 ---
 
+## 2021.05.18
+
+- 利用 jsDelivr 极大加速访问速度
+
 ## 2021.03.29
 
 - 自定义 Tag：codepen
