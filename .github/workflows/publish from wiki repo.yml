@@ -1,9 +1,9 @@
-name: Hexo Deploy
+name: Auto Hexo Deploy From Wiki Repo
 
 on:
   push:
     branches:
-      - docs
+      - main
       
 jobs:
   build:
