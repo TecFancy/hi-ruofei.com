@@ -1,0 +1,23 @@
+name: Hexo Deploy
+
+on:
+  push:
+    branches:
+      - docs
+      
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    if: github.event.repository.owner.id == github.event.sender.id
+    
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v2
+        with:
+          ref: main
+
+      - name: Copy project
+        run: |
+          cd ../
+          cp -rfv ./hi-ruofei.com /hi-ruofei.com
+          ls / -al
