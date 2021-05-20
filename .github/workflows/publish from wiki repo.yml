@@ -18,6 +18,4 @@ jobs:
 
       - name: Copy project
         run: |
-          cd ../
-          cp -rfv ./hi-ruofei.com /hi-ruofei.com
-          ls / -al
+          ls ../ -al
