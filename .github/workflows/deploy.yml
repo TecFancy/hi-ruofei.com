@@ -1,45 +1,45 @@
-name: Hexo Deploy
+# name: Hexo Deploy
 
-on:
-  push:
-    branches:
-      - main
+# on:
+#   push:
+#     branches:
+#       - main
 
-jobs:
-  build:
-    runs-on: ubuntu-18.04
-    if: github.event.repository.owner.id == github.event.sender.id
+# jobs:
+#   build:
+#     runs-on: ubuntu-18.04
+#     if: github.event.repository.owner.id == github.event.sender.id
 
-    steps:
-      - name: Checkout source
-        uses: actions/checkout@v2
-        with:
-          ref: main
+#     steps:
+#       - name: Checkout source
+#         uses: actions/checkout@v2
+#         with:
+#           ref: main
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v1
-        with:
-          node-version: '14.x'
+#       - name: Setup Node.js
+#         uses: actions/setup-node@v1
+#         with:
+#           node-version: '14.x'
 
-      - name: Setup Hexo
-        env:
-          ACTION_DEPLOY_KEY: ${{ secrets.BLOG_DEPLOY_KEY }}
-        run: |
-          mkdir -p ~/.ssh/
-          echo "$ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa
-          chmod 700 ~/.ssh
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan github.com >> ~/.ssh/known_hosts
-          git config --global user.email "contact@mail.ruofei.site"
-          git config --global user.name "ruofei"
-          npm install hexo-cli -g
-          npm i
+#       - name: Setup Hexo
+#         env:
+#           ACTION_DEPLOY_KEY: ${{ secrets.BLOG_DEPLOY_KEY }}
+#         run: |
+#           mkdir -p ~/.ssh/
+#           echo "$ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa
+#           chmod 700 ~/.ssh
+#           chmod 600 ~/.ssh/id_rsa
+#           ssh-keyscan github.com >> ~/.ssh/known_hosts
+#           git config --global user.email "contact@mail.ruofei.site"
+#           git config --global user.name "ruofei"
+#           npm install hexo-cli -g
+#           npm i
 
-      - name: Deploy 2 Github Pages (repo - smpower.github.io)
-        run: |
-          hexo clean
-          hexo deploy
+#       - name: Deploy 2 Github Pages (repo - smpower.github.io)
+#         run: |
+#           hexo clean
+#           hexo deploy
 
-      # - name: Deploy 2 vercel
-      #   run: |
-      #     curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_jvK46JFFF8UCRDL3ajLZWzN5USGz/mPfwYBtppT
+#       # - name: Deploy 2 vercel
+#       #   run: |
+#       #     curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_jvK46JFFF8UCRDL3ajLZWzN5USGz/mPfwYBtppT
