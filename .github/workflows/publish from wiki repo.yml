@@ -31,7 +31,7 @@ jobs:
           ref: main
 
       - name: Copy project
-        run: cp -rfv ~/hi-ruofei.com ~/tmp
+        run: cp -rfv ../hi-ruofei.com ../tmp
           
       - name: Checkout source of docs branch
         uses: actions/checkout@v2
@@ -39,11 +39,11 @@ jobs:
           ref: docs
       
       - name: Copy docs
-        run: cp -rfv ~/hi-ruofei.com/docs/* ~/tmp/source
+        run: cp -rfv ../hi-ruofei.com/docs/* ../tmp/source
       
       - name: Deploy 2 Github Pages (repo - smpower.github.io)
         run: |
-          cd ~/tmp
+          cd ../tmp
           npm install hexo-cli -g
           npm i
           hexo clean
