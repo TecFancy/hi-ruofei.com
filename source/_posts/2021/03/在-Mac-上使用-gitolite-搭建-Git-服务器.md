@@ -1,8 +1,9 @@
 ---
 title: 在 Mac 上使用 gitolite 搭建 Git 服务器
-date: 2021-03-26 18:21:48
 categories: Git
 tags: gitolite
+abbrlink: 952aa112
+date: 2021-03-26 18:21:48
 ---
 
 ## 目标

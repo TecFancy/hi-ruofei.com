@@ -2,6 +2,7 @@
 title: JavaScript 基础语法
 tags: JavaScript 语法
 categories: JavaScript
+abbrlink: 5f0515fe
 date: 2021-01-17 17:10:20
 ---
 

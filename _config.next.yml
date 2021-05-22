@@ -81,16 +81,6 @@ creative_commons:
 # External url should start with http:// or https://
 menu:
   home: / || fa fa-home
-  development:
-    default: /development/ || fa fa-code
-    JavaScript:
-      default: ../JavaScript/
-    Jest:
-      default: ../Jest/
-    Webpack:
-      default: ../Webpack/
-    third party:
-      default: ../third-party/
   #about: /about/ || fa fa-user
   tags: /tags/ || fa fa-tags
   categories: /categories/ || fa fa-th

@@ -1,6 +1,7 @@
 ---
 title: 安装 Node.js
 categories: Node.js
+abbrlink: ad163972
 date: 2021-01-27 23:20:20
 tags:
 ---

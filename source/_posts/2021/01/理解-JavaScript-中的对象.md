@@ -2,6 +2,7 @@
 title: 理解 JavaScript 中的对象
 tags: JavaScript 中的对象、类和面向对象编程
 categories: JavaScript
+abbrlink: d282b4bc
 date: 2021-01-17 22:00:43
 ---
 

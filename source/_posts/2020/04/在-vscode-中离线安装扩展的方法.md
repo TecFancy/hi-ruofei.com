@@ -3,6 +3,7 @@ title: 在 vscode 中离线安装扩展的方法
 tags: vscode
 categories:
   - 开发工具
+abbrlink: b874373c
 date: 2020-04-29 10:40:44
 ---
 
