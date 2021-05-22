@@ -2,6 +2,20 @@
 <meta name="baidu_union_verify" content="68e4f384879dc561674a548accc6b847"/>
 <meta name="yandex-verification" content="9788e2b0ed6f343a"/>
 <meta name="360-site-verification" content="d273f6027f001901c40e07e6e117253a"/>
+<script>
+  (function () {
+    const redirect = () => {
+      const hosts = ["hi-ruofei.netlify.app", "smpower.github.io", "master--hi-ruofei.netlify.app"];
+      const {host, pathname} = window.location;
+      hosts.forEach(hostItem => {
+        if (hostItem === host) 
+          window.location = `https://hi-ruofei.com${pathname}`;
+        }
+      );
+    }
+    redirect();
+  })();
+</script>
 <script
   data-ad-client="ca-pub-6822798876342709"
   async="async"
