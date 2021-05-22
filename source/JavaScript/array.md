@@ -5,6 +5,5 @@ description: Array
 comments: false
 ---
 
-1. [检测数组](/post/834f359e/)
-2. [迭代器方法](/post/56796ee0/)
-
+1. [检测数组](/post/JavaScript-之检测数组_20210324/)
+2. [迭代器方法](/post/JavaScript-之-Array-中的迭代器方法_20210323/)

@@ -4,10 +4,10 @@ date: 2021-01-07 00:00:00
 comments: false
 ---
 
-1. [Excuse me! 对不起](/post/5a392292/)
-2. [Is this your ...? 这是你的……吗？](/post/dd263ef0/)
-3. [Sorry, sir. 对不起，先生。](/post/67c3f522/)
-4. Is this your ...? 
+1. Excuse me! 对不起
+2. Is this your ...? 这是你的……吗？
+3. Sorry, sir. 对不起，先生。
+4. Is this your ...?
 5. Nice to meet you. 很高兴见到你。
 6. What make is it? 它是什么牌子的？
 7. Are you a teacher? 你是教师吗？

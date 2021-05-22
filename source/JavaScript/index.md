@@ -6,18 +6,18 @@ comments: false
 ---
 
 1. 语言基础
-   1.1 [语法](/post/5f0515fe/)
-   
+   1.1 [语法](/post/JavaScript-基础语法_20210117/)
+
    1.2 变量
-   
+
    1.3 数据类型
-   
+
    1.4 操作符
-   
+
    1.5 语句
-   
+
    1.6 函数
-   
+
 2. 变量、作用域与内存
 
    2.1 原始值与引用值
@@ -181,7 +181,7 @@ comments: false
 
     15.6 模拟事件
 
-16. 动画与Canvas图形
+16. 动画与 Canvas 图形
 
     16.1 使用 `requestAnimationFrame`
 
