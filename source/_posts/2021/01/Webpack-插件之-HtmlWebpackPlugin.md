@@ -4,6 +4,7 @@ categories: Webpack
 tags: 插件
 abbrlink: 6409f2be
 date: 2021-01-27 23:29:23
+updated:
 ---
 
 该插件将为你生成一个 HTML5 文件，用以服务 webpack 编译输出的 bundle。

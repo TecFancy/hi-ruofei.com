@@ -4,6 +4,7 @@ tags: JavaScript 中的对象、类和面向对象编程
 categories: JavaScript
 abbrlink: d282b4bc
 date: 2021-01-17 22:00:43
+updated:
 ---
 
 通常，通过创建 `Object` 的一个实例来创建自定义对象，然后再给它添加属性和方法。例如：

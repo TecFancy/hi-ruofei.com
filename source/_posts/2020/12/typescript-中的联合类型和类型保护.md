@@ -3,6 +3,7 @@ title: typescript 中的联合类型和类型保护
 tags: TypeScript
 abbrlink: e20d5a03
 date: 2020-12-31 22:36:14
+updated:
 ---
 
 下面通过一个简单的例子来说明 typescript 中的联合类型。

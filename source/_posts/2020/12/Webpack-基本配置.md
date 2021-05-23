@@ -1,8 +1,9 @@
 ---
 title: Webpack 基本配置
 tags: Webpack
-abbrlink: '75208998'
+abbrlink: "75208998"
 date: 2020-12-13 16:41:15
+updated:
 ---
 
 ## 初始化项目目录

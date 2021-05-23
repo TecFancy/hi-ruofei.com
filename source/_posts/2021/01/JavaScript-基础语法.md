@@ -4,6 +4,7 @@ tags: JavaScript 语法
 categories: JavaScript
 abbrlink: 5f0515fe
 date: 2021-01-17 17:10:20
+updated:
 ---
 
 ECMAScript 的语法大量借鉴了 C 及其他类 C 语言（如 Java 和 Perl）的语法，而 ECMAScript 语法相对其他语言的语法要更加宽松。

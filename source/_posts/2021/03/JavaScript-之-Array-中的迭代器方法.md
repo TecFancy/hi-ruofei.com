@@ -7,6 +7,7 @@ tags:
   - JavaScript Array
 abbrlink: 56796ee0
 date: 2021-03-23 00:15:02
+updated:
 ---
 
 `Array` 的原型上暴露了 3 个用于检索数组内容的迭代器方法：`keys()`、`values()` 和 `entries()`。

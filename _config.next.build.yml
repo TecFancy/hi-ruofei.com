@@ -959,6 +959,6 @@ vendors:
 
 # Assets
 # Accelerate delivery of static files using a CDN
-css: css
-js: js
-images: images
+css: https://cdn.jsdelivr.net/gh/smpower/smpower.github.io/css # css
+js: https://cdn.jsdelivr.net/gh/smpower/smpower.github.io/js # js
+images: https://cdn.jsdelivr.net/gh/smpower/smpower.github.io/images # images

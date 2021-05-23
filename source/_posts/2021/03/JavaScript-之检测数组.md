@@ -7,6 +7,7 @@ tags:
   - JavaScript Array
 abbrlink: 834f359e
 date: 2021-03-24 22:47:50
+updated:
 ---
 
 要判断一个对象是不是数组，ECMAScript 提供了 2 种检测方式，他们分别是：

@@ -6,6 +6,7 @@ tags:
   - atob
 abbrlink: bb41300d
 date: 2021-01-04 13:58:55
+updated:
 ---
 
 目前绝大多数浏览器已原生支持 Base-64 的编码解码（最低支持到 IE10），详细的浏览器兼容性列表请参考[这里](https://developer.mozilla.org/zh-CN/docs/Web/API/WindowBase64/btoa#%E6%B5%8F%E8%A7%88%E5%99%A8%E5%85%BC%E5%AE%B9%E6%80%A7)。

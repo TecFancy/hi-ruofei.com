@@ -37,6 +37,8 @@ jobs:
 
       - name: Deploy 2 Github Pages (repo - smpower.github.io)
         run: |
+          rm -rfv _config.next.yml
+          mv _config.next.build.yml _config.next.yml
           hexo clean
           hexo deploy
 
