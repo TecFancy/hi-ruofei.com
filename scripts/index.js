@@ -9,3 +9,5 @@ hexo.extend.deployer.register(
 );
 
 hexo.extend.tag.register("codepen", require("./code-pen"));
+
+hexo.extend.tag.register("ggad", require("./ggad"));
