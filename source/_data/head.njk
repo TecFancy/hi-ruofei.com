@@ -1,3 +1,9 @@
+{%- if page.keywords %}
+  <meta name="keywords" content="{{ page.keywords }},{{ config.keywords }}">
+{% elseif config.keywords %}
+  <meta name="keywords" content="{{ config.keywords }}">
+{%- endif %}
+
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="baidu_union_verify" content="68e4f384879dc561674a548accc6b847"/>
 <meta name="yandex-verification" content="9788e2b0ed6f343a"/>
