@@ -1850,10 +1850,10 @@ hexo-generator-index@^2.0.0:
     hexo-pagination "1.0.0"
     timsort "^0.3.0"
 
-hexo-generator-searchdb@^1.3.3:
+hexo-generator-searchdb@^1.3.4:
   version "1.3.4"
-  resolved "https://registry.npmjs.org/hexo-generator-searchdb/-/hexo-generator-searchdb-1.3.4.tgz#0b0679b7c0c6376fa8e139afb135cf84ae6af1ad"
-  integrity sha512-ygcycC64qVW7c10U6o5HDxLsK7gW8D/KMZD0LJG/ZDNkVT/vten0r0cLBro0sF3ea8ut7aSKjochSkC7jUgsQg==
+  resolved "http://172.16.1.152:7070/repository/npm-group/hexo-generator-searchdb/-/hexo-generator-searchdb-1.3.4.tgz#0b0679b7c0c6376fa8e139afb135cf84ae6af1ad"
+  integrity sha1-CwZ5t8DGN2+o4TmvsTXPhK5q8a0=
   dependencies:
     nunjucks "^3.2.2"
 
@@ -1944,10 +1944,10 @@ hexo-server@^2.0.0:
     open "^7.0.0"
     serve-static "^1.14.1"
 
-hexo-theme-next@^8.4.0:
+hexo-theme-next@^8.5.0:
   version "8.5.0"
-  resolved "https://registry.npmjs.org/hexo-theme-next/-/hexo-theme-next-8.5.0.tgz#74bb34c3d2481d36bc5b1877bfc6104f4ac3484c"
-  integrity sha512-QqUiOiz+z2PbxL+f0Osgwd0BH7FkSb3F7QoSTS+IE+SIhXlJgW4gjlvfjYkZDC0/n4lGb7n7skco9vgMJTtxeQ==
+  resolved "http://172.16.1.152:7070/repository/npm-group/hexo-theme-next/-/hexo-theme-next-8.5.0.tgz#74bb34c3d2481d36bc5b1877bfc6104f4ac3484c"
+  integrity sha1-dLs0w9JIHTa8Wxh3v8YQT0rDSEw=
 
 hexo-util@^2.0.0, hexo-util@^2.1.0, hexo-util@^2.4.0:
   version "2.5.0"
@@ -3060,10 +3060,10 @@ node-gyp@^7.1.0:
     tar "^6.0.2"
     which "^2.0.2"
 
-node-gyp@^8.0.0:
+node-gyp@^8.1.0:
   version "8.1.0"
-  resolved "https://registry.npmjs.org/node-gyp/-/node-gyp-8.1.0.tgz#81f43283e922d285c886fb0e0f520a7fd431d8c2"
-  integrity sha512-o2elh1qt7YUp3lkMwY3/l4KF3j/A3fI/Qt4NH+CQQgPJdqGE9y7qnP84cjIWN27Q0jJkrSAhCVDg+wBVNBYdBg==
+  resolved "http://172.16.1.152:7070/repository/npm-group/node-gyp/-/node-gyp-8.1.0.tgz#81f43283e922d285c886fb0e0f520a7fd431d8c2"
+  integrity sha1-gfQyg+ki0oXIhvsOD1IKf9Qx2MI=
   dependencies:
     env-paths "^2.2.0"
     glob "^7.1.4"
@@ -3112,10 +3112,10 @@ npm-bundled@^1.1.1:
   dependencies:
     npm-normalize-package-bin "^1.0.1"
 
-npm-check-updates@^11.5.13:
+npm-check-updates@^11.6.0:
   version "11.6.0"
-  resolved "https://registry.npmjs.org/npm-check-updates/-/npm-check-updates-11.6.0.tgz#fa9cce88138e46b02ca34f54232493b2fdadb5ae"
-  integrity sha512-/l4S7Gh+8+Rg5itWsqFya5RRSHtPzw5neyAlbWNJfBfEeRX6lYVxKgs85QFBOKrZj3eL5MGBaUW8228TmjMhrw==
+  resolved "http://172.16.1.152:7070/repository/npm-group/npm-check-updates/-/npm-check-updates-11.6.0.tgz#fa9cce88138e46b02ca34f54232493b2fdadb5ae"
+  integrity sha1-+pzOiBOORrAso09UIySTsv2tta4=
   dependencies:
     chalk "^4.1.1"
     cint "^8.2.1"
