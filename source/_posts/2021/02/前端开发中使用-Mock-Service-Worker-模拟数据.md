@@ -1,7 +1,10 @@
 ---
-title: 前端开发中使用 Mock Service Worker 模拟数据
-categories: Mock Server
+title: 前端:使用 Mock Service Worker 模拟数据
+categories:
+  - 前端
+  - Mock Server
 tags:
+  - server
   - Mock Service Worker
   - msw
 abbrlink: c62eb287
