@@ -4,6 +4,11 @@ date: 2021-03-19 22:34:00
 comments: false
 ---
 
+## 2021.06.19
+
+- 更新外部依赖：`npm-check-updates@11.6.0` => `npm-check-updates@11.7.1`，[文档](https://github.com/raineorshine/npm-check-updates/tree/v11.7.1)
+- 更新站点描述
+
 ## 2021.06.12
 
 - 更新外部依赖
