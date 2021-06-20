@@ -1,7 +1,7 @@
 ---
-title: "TypeScript Utility Types - Required: TypeScript 实用类型 - Required"
-abbrlink: 64ba61b9
-date: 2021-06-20 16:34:04
+title: "TypeScript Utility Types - Readonly: TypeScript 实用类型 - Readonly"
+abbrlink: ed3ec8e0
+date: 2021-06-20 22:57:19
 categories: 前端
 tags:
   - TypeScript
@@ -20,9 +20,9 @@ type User = {
 };
 ```
 
-<!-- more -->
-
 `User` 类型中的 `age` 属性是可选属性，当经过 `Required<Type>` 转换后，该属性会被转换成必选属性：
+
+<!-- more -->
 
 ```typescript
 type RequiredUser = Required<User>;
