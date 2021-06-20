@@ -22,6 +22,8 @@ type User = {
 
 <!-- more -->
 
+{% ggad-fluid %}
+
 `User` 类型中的 `age` 属性是可选属性，当经过 `Required<Type>` 转换后，该属性会被转换成必选属性：
 
 ```typescript

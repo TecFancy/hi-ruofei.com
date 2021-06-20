@@ -24,6 +24,8 @@ $ yarn add msw --dev
 
 <!-- more -->
 
+{% ggad-fluid %}
+
 ## 定义 mocks（模拟 REST API）
 
 使用 request handler 来定义要模拟的请求。
@@ -145,7 +147,7 @@ $ npx msw init public/ --save
   // src/mocks/browser.js
   import { setupWorker } from "msw";
   import { handlers } from "./handlers";
-
+  
   // This configures a Service Worker with the given request handlers.
   export const worker = setupWorker(...handlers);
   ```

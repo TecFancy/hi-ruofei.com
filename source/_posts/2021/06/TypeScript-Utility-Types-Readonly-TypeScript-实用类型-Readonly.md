@@ -24,6 +24,8 @@ type User = {
 
 <!-- more -->
 
+{% ggad-fluid %}
+
 ```typescript
 type RequiredUser = Required<User>;
 

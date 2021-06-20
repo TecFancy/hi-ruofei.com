@@ -18,6 +18,8 @@ updated:
 
 <!-- more -->
 
+{% ggad-fluid %}
+
 ```js
 const strings = ["hi-ruofei.com", "https://hi-ruofei.com", "Hello world"];
 

@@ -23,6 +23,8 @@ npm install webpack webpack-cli html-webpack-plugin --save-dev # 或 yarn add --
 
 <!-- more -->
 
+{% ggad-fluid %}
+
 现在，我们将创建以下目录结构、文件和内容：
 
 {% tabs 初始化项目目录 %}

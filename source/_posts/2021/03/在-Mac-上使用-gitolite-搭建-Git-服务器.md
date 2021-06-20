@@ -19,6 +19,8 @@ keywords: git,gitolite,git 裸仓库,iCloud,MacOS,MacBook,SSH,MacBook 远程登�
 
 <!-- more -->
 
+{% ggad-fluid %}
+
 ```bash
 $ ssh-keygen -t rsa -b 4096
 Generating public/private rsa key pair.

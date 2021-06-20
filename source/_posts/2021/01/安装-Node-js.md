@@ -13,6 +13,8 @@ tags:
 
 <!-- more -->
 
+{% ggad-fluid %}
+
 ## 通过包管理器安装 Node.js
 
 另一种便捷的方式是通过软件包管理器安装 Node.js。每种操作系统都有其自身的包管理器，适用与 Linux 和 windows 的包管理器列出在 [https://nodejs.org/en/download/package-manager/](https://nodejs.org/en/download/package-manager/)。

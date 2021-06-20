@@ -17,6 +17,8 @@ npm install --save-dev html-webpack-plugin # or yarn add --dev html-webpack-plug
 
 <!-- more -->
 
+{% ggad-fluid %}
+
 ## 基础用法
 
 该插件会为你生成一个 HTML5 文件，在文件的 `body` 标签中包含 webpack 编译输出的所有 bundle 文件。你只需要在 webpack 配置文件中启用该插件即可：

@@ -26,6 +26,8 @@ type User = {
 
 <!-- more -->
 
+{% ggad-fluid %}
+
 ```typescript
 type PartialUser = Partial<User>;
 const partialUser: PartialUser = {

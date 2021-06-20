@@ -11,6 +11,8 @@ ECMAScript 的语法大量借鉴了 C 及其他类 C 语言（如 Java 和 Perl�
 
 <!-- more -->
 
+{% ggad-fluid %}
+
 ## 区分大小写
 
 ECMAScript 中的一切（变量、函数名和操作符）都区分大小写。比如，变量名 `test` 和变量名 `Test` 分别表示完全不同的两个变量。再比如，`typeof` 不能作为变量名（因为它是 ECMAScript 中的一个关键字，关键字不能用作函数名），但是 `typeOf` 则完全可以是一个有效的函数名。

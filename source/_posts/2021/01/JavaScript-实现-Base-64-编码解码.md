@@ -22,6 +22,8 @@ updated:
 
 <!-- more -->
 
+{% ggad-fluid %}
+
 `window.btoa()` 从 `String` 对象中创建一个 Base-64 编码的 ASCII 字符串，其中字符串中的每个字符都被视为一个二进制数据字节。`atob()` 方法可以将通过 `window.btoa()` 编码的字符串数据解码。
 
 ## 语法

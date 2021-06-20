@@ -17,6 +17,8 @@ updated:
 
 <!-- more -->
 
+{% ggad-fluid %}
+
 ## Hexo
 
 首先我们需要确保在本地已经安装了 hexo-cli，安装方式参见 [官网](https://hexo.io/zh-cn/docs/)。

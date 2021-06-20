@@ -17,6 +17,8 @@ updated:
 
 <!-- more -->
 
+{% ggad-fluid %}
+
 在只有一个全局作用域的情况下，使用 `instanceof` 操作符即可：
 
 ```js

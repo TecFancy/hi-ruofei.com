@@ -24,6 +24,8 @@ interface Dog {
 
 <!-- more -->
 
+{% ggad-fluid %}
+
 定义好了接口，那我们就来训练一下这两只小动物吧。下面我们定义一个函数 `trainAnimal`，该函数接收一个形参 `animal`，如果这个参数可以指 `Bird` 也可以指 `Dog`，那么我们可以这样写：
 
 ```ts

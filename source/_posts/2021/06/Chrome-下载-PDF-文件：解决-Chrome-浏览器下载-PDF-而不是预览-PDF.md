@@ -15,6 +15,8 @@ updated:
 
 <!-- more -->
 
+{% ggad-fluid %}
+
 具体 JS 代码如下：
 
 ```javascript
@@ -25,8 +27,10 @@ updated:
  * @param {string} type 文件类型
  */
 export const fileLink2StreamDownload = ({ url, fileName, type }) => {
-  const reg = /^([hH][tT]{2}[pP]:\/\/|[hH][tT]{2}[pP][sS]:\/\/)(([A-Za-z0-9-~]+).)+([A-Za-z0-9-~\/])+$/;
-  if (!reg.test(url)) throw new Error('传入参数不合法，`url` 不是标准的文件链接');
+  const reg =
+    /^([hH][tT]{2}[pP]:\/\/|[hH][tT]{2}[pP][sS]:\/\/)(([A-Za-z0-9-~]+).)+([A-Za-z0-9-~\/])+$/;
+  if (!reg.test(url))
+    throw new Error("传入参数不合法，`url` 不是标准的文件链接");
 
   const xhr = new XMLHttpRequest();
   // 规定请求的类型、URL 以及是否异步处理请求。
@@ -34,14 +38,14 @@ export const fileLink2StreamDownload = ({ url, fileName, type }) => {
   //     - method：请求的类型（GET 或 POST ）
   //     - url：文件在服务器上的位置
   //     - async：true（异步）或 false（同步）
-  xhr.open('get', url, true);
-  xhr.setRequestHeader('Content-Type', `application/${type}`);
-  xhr.responseType = 'blob';
-  xhr.onload = function() {
+  xhr.open("get", url, true);
+  xhr.setRequestHeader("Content-Type", `application/${type}`);
+  xhr.responseType = "blob";
+  xhr.onload = function () {
     if (this.status === 200) {
       const blob = new Blob([this.response], { type: `application/${type}` });
       const objectUrl = URL.createObjectURL(blob);
-      const ele = document.createElement('a');
+      const ele = document.createElement("a");
       ele.href = objectUrl;
       ele.download = fileName;
       ele.click();

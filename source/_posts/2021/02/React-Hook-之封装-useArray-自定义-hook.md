@@ -14,6 +14,8 @@ updated:
 
 <!-- more -->
 
+{% ggad-fluid %}
+
 ```jsx
 /**
  * use-array.tsx
