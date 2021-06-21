@@ -18,8 +18,6 @@ keywords:
 
 <!-- more -->
 
-{% ggad-fluid %}
-
 ## 编写 MediaWiki 扩展 gists.php
 
 首先编写一个 MediaWiki 扩展，文件命名为 `gists.php`：
@@ -115,3 +113,5 @@ addEventListener("fetch", (event) => {
 // 省略了其他配置项...
 require_once "$IP/extensions/gists/gists.php";
 ```
+
+{% ggad-fluid %}

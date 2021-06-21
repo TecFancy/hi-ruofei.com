@@ -40,8 +40,6 @@ const person = {
 
 <!-- more -->
 
-{% ggad-fluid %}
-
 ## 属性的类型
 
 属性分两种：**数据属性**和**访问器属性**。
@@ -501,3 +499,5 @@ const fourth = "Olive";
 const result = recursivelyCheckEqual(first, second, third, fourth);
 console.log(result); // true
 ```
+
+{% ggad-fluid %}

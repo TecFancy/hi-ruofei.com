@@ -22,8 +22,6 @@ updated:
 
 <!-- more -->
 
-{% ggad-fluid %}
-
 `window.btoa()` 从 `String` 对象中创建一个 Base-64 编码的 ASCII 字符串，其中字符串中的每个字符都被视为一个二进制数据字节。`atob()` 方法可以将通过 `window.btoa()` 编码的字符串数据解码。
 
 ## 语法
@@ -82,3 +80,5 @@ atou("SSDimaEgVW5pY29kZSE="); // "I ♡ Unicode!"
 - [浏览器原生支持 JS Base64 编码解码](https://blog.csdn.net/sunwork888/article/details/89436947?utm_medium=distribute.pc_relevant.none-task-blog-baidujs_title-6&spm=1001.2101.3001.4242)
 - [WindowOrWorkerGlobalScope.btoa()](https://developer.mozilla.org/zh-CN/docs/Web/API/WindowBase64/btoa)
 - [WindowOrWorkerGlobalScope.atob()](https://developer.mozilla.org/zh-CN/docs/Web/API/WindowBase64/atob)
+
+{% ggad-fluid %}

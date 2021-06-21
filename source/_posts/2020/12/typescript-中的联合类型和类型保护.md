@@ -24,8 +24,6 @@ interface Dog {
 
 <!-- more -->
 
-{% ggad-fluid %}
-
 定义好了接口，那我们就来训练一下这两只小动物吧。下面我们定义一个函数 `trainAnimal`，该函数接收一个形参 `animal`，如果这个参数可以指 `Bird` 也可以指 `Dog`，那么我们可以这样写：
 
 ```ts
@@ -68,3 +66,5 @@ function trainAnimal(animal: Bird | Dog) {
 上面代码的意思是，我们利用 `in` 语法直接判断 `animal` 属性中是否存在 `sing` 属性，如果存在就直接调用 `sing` 方法。因为 `animal` 属性除了是 `Bird` 类型外，只可能是 `Dog` 类型，所以我们可以在 `if` 语句的 `else` 分支中直接调用 `bark` 方法。
 
 通过这个简单的例子，我们就知道什么是联合类型和类型保护了吧。
+
+{% ggad-fluid %}

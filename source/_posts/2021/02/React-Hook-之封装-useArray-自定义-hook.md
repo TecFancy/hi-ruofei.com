@@ -14,8 +14,6 @@ updated:
 
 <!-- more -->
 
-{% ggad-fluid %}
-
 ```jsx
 /**
  * use-array.tsx
@@ -77,3 +75,5 @@ export default UserList;
 ```
 
 之后，根据业务场景可随时向 `useArray` 自定义 hook 中添加额外逻辑。一处添加，到处使用。
+
+{% ggad-fluid %}

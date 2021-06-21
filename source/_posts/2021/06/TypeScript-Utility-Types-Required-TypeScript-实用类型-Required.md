@@ -22,8 +22,6 @@ type User = {
 
 <!-- more -->
 
-{% ggad-fluid %}
-
 `User` 类型中的 `age` 属性是可选属性，当经过 `Required<Type>` 转换后，该属性会被转换成必选属性：
 
 ```typescript
@@ -51,3 +49,5 @@ type Required<T> = {
 注意到属性后的 `-?` 了吗？意思是：去除该属性的可选属性，使其转换为必选的属性。
 
 [Playground Link](https://www.typescriptlang.org/zh/play?ssl=16&ssc=3&pln=7&pc=1#code/C4TwDgpgBAqgzhATlAvFA3gKCjqA7AQwFsIAuKOYRASzwHMBubXAus-AVyICMkncobPABMk5SjXpMAvpkyhIUAEoQAjh2qIIw+ElTK1GrcIA8uxAD4mmAMYB7PJShb1m7efIrXx8-qwCAegAqIKgAA0ISMKhAPR1AcgNAejNAUf1ASATAELcoIIDmHEj2AHIAeQAbagA3CHyAGhyoYNCw1gho+OT0zOyBJvIARgAOGsCQ8KFRRBbE1Iys2tGxKHyAMwgiAmLKzGkGIA)
+
+{% ggad-fluid %}

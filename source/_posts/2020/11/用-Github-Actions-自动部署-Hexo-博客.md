@@ -17,8 +17,6 @@ updated:
 
 <!-- more -->
 
-{% ggad-fluid %}
-
 ## Hexo
 
 首先我们需要确保在本地已经安装了 hexo-cli，安装方式参见 [官网](https://hexo.io/zh-cn/docs/)。
@@ -173,4 +171,4 @@ git config 相关的名字和邮件地址替换成大家自己使用的就好了
 
 好了，以上就是利用 GitHub Actions 自动部署 Hexo 到 GitHub Pages 的方法，有疑问的请在下方留言哦 😊
 
-（你看到这篇日志的时候我可能还没配置留言功能呢，或者因为审核暂时将留言功能关闭了，这个时候你就可以给我发邮件啦 ～）
+{% ggad-fluid %}

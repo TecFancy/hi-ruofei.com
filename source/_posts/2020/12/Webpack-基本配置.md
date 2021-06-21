@@ -23,8 +23,6 @@ npm install webpack webpack-cli html-webpack-plugin --save-dev # 或 yarn add --
 
 <!-- more -->
 
-{% ggad-fluid %}
-
 现在，我们将创建以下目录结构、文件和内容：
 
 {% tabs 初始化项目目录 %}
@@ -152,3 +150,5 @@ dist/
 在 index.html 的 `body` 标签中，我们会发现 main.js 文件已经被正确引入进来了。现在我们用浏览器打开 index.html 文件，会在页面中显示 `Hello world.` 且控制台中会打印 `Hello world.` 消息。
 
 至此，一个最基本的 webpack 配置已经完成，有任何想法或疑问欢迎在下方留言讨论。
+
+{% ggad-fluid %}

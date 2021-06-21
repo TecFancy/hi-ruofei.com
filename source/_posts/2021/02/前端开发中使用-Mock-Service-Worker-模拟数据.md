@@ -24,8 +24,6 @@ $ yarn add msw --dev
 
 <!-- more -->
 
-{% ggad-fluid %}
-
 ## 定义 mocks（模拟 REST API）
 
 使用 request handler 来定义要模拟的请求。
@@ -183,3 +181,5 @@ ReactDOM.render(<App />, document.getElementById("root"));
 ## 小结
 
 Mock Service Worker 是一个非常强大的 mock server 库，可查看 [官网](https://mswjs.io/) 查看详细信息。
+
+{% ggad-fluid %}

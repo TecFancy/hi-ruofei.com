@@ -15,8 +15,6 @@ updated:
 
 <!-- more -->
 
-{% ggad-fluid %}
-
 具体 JS 代码如下：
 
 ```javascript
@@ -58,3 +56,5 @@ export const fileLink2StreamDownload = ({ url, fileName, type }) => {
 `fileLink2StreamDownload` 方法内部通过 `XMLHttpRequest` 发起一个 GET 请求，设置请求的响应类型为 `blob`，然后在页面上创建一个隐藏的 `a` 标签，然后点击一下这个 `a` 标签，实现 PDF 的下载功能。这里的关键是将文件链接转换为 `blob` 文件流来实现下载 PDF。如果 PDF 的链接有权限验证的话，可以用你项目中封装好的 `request` 方法代替上面的 `XMLHttpRequest` 方法。
 
 上面的方法是经过项目验证过的，你可以放心大胆的 copy 过去，根据你的项目略作修改就能用了！甚至都不用改就可以。
+
+{% ggad-fluid %}

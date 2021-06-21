@@ -19,8 +19,6 @@ keywords: git,gitolite,git 裸仓库,iCloud,MacOS,MacBook,SSH,MacBook 远程登�
 
 <!-- more -->
 
-{% ggad-fluid %}
-
 ```bash
 $ ssh-keygen -t rsa -b 4096
 Generating public/private rsa key pair.
@@ -167,4 +165,4 @@ git clone <username>@local:gitolite-admin.git # <username> 是你的用户名
 - [Gitolite](https://gitolite.com/)
 - [45.在 Mac 上使用 gitolite 搭建 Git 服务器](https://blog.csdn.net/a464057216/article/details/52644021)
 
-{% ggad %}
+{% ggad-fluid %}

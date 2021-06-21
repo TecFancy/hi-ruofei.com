@@ -26,8 +26,6 @@ type User = {
 
 <!-- more -->
 
-{% ggad-fluid %}
-
 ```typescript
 type PartialUser = Partial<User>;
 const partialUser: PartialUser = {
@@ -66,3 +64,6 @@ type Partial<T> = {
 - 可选属性的值为 `T` 类型中对应属性的值，即 `T[P]`。
 
 [Playground Link](https://www.typescriptlang.org/zh/play?#code/C4TwDgpgBAqgzhATlAvFA3gKCjqA7AQwFsIAuKOYRASzwHMBubXAus-AVyICMkncobPABMk5SjXpMAvpkyhIUAAoFEwagQA28JKmWr1WgDw7EAPiaYAxgHs8lKGAMbtCRORVqXpvVgEB6ACpAqAADQhJQqEA9HUByA0B6M0B75UBIBMAQtyhA-2YcCPYAcgB5TWoANwg8gBpsqCCQ0NYIKLiktIysgQbyAEYADiqA4LChUUQmhJT0zOrhsSg8gDMIIi1yqukgA)
+
+{% ggad-fluid %}
+

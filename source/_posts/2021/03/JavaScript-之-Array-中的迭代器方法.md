@@ -18,8 +18,6 @@ updated:
 
 <!-- more -->
 
-{% ggad-fluid %}
-
 ```js
 const strings = ["hi-ruofei.com", "https://hi-ruofei.com", "Hello world"];
 
@@ -55,3 +53,5 @@ for (const [idx, element] of entries) {
  */
 console.log(result);
 ```
+
+{% ggad-fluid %}
