@@ -30,6 +30,7 @@ const zhangSan: Record<penNames, ZhangSanInfo> = {
 
 <!-- more -->
 
+上面代码中，定义了 `张三` 的一些个人信息（`ZhangSanInfo`），包括：`name`（姓名）、`age`（年龄）和 `gender`（性别）。假设他有 3 个不同的昵称：`san_ge`（三哥）、`xiao_san`（小三）、`san_zi`（三子），因为这三个昵称都是指 `张三` 这个人，所以这三个昵称上都应该有 `张三` 身上的属性。
+
 {% ggad-fluid %}
 
-上面代码中，定义了 `张三` 的一些个人信息（`ZhangSanInfo`），包括：`name`（姓名）、`age`（年龄）和 `gender`（性别）。假设他有 3 个不同的昵称：`san_ge`（三哥）、`xiao_san`（小三）、`san_zi`（三子），因为这三个昵称都是指 `张三` 这个人，所以这三个昵称上都应该有 `张三` 身上的属性。

@@ -3,12 +3,11 @@ title: "TypeScript Utility Types - Partial: TypeScript 实用类型 - Partial"
 abbrlink: d31a997b
 date: 2021-06-20 01:52:51
 categories:
-  - TypeScript
+  - 前端
 tags:
-  - "TypeScript: Utility Types"
-  - "TS: Utility Types"
-  - "TypeScript: 实用类型"
-  - "TS: 实用类型"
+  - TypeScript
+  - TypeScript:Utility Types
+  - TypeScript:实用类型
 updated:
 ---
 
