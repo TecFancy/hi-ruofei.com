@@ -263,7 +263,7 @@ tag_icon: false
 # Front-matter variable (unsupport animation).
 reward_settings:
   # If true, a donate button will be displayed in every article by default.
-  enable: true
+  enable: false
   animation: false
   comment: 请我吃个肉夹馍 🥙 好不啦 😘
 
