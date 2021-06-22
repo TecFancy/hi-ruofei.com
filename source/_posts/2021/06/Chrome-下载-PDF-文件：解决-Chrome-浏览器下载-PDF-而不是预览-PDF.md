@@ -2,13 +2,18 @@
 title: （JS）Chrome 下载 PDF 文件：（JS）解决 Chrome 浏览器下载 PDF 而不是预览 PDF
 abbrlink: 29e80bac
 date: 2021-06-20 01:35:17
+updated:
 categories:
   - 前端
   - QA
 tags:
   - JavaScript
   - Chrome
-updated:
+keywords:
+  - JavaScript
+  - JS
+  - Chrome
+  - PDF
 ---
 
 在前端开发中遇到这样一个问题：在 Chrome 中通过一个链接下载 PDF 文件时却被 Chrome 浏览器打开预览了，这不是我想要的效果，点击 PDF 链接的时候我希望下载这个文件而不是去预览。这里提供一个解决方案，将 PDF 文件通过 `XMLHttpRequest` 请求的方式，将文件转换为文件流，然后实现下载 PDF 的功能。

@@ -2,12 +2,23 @@
 title: "TypeScript Utility Types - Readonly: TypeScript 实用类型 - Readonly"
 abbrlink: ed3ec8e0
 date: 2021-06-20 22:57:19
+updated:
 categories: 前端
 tags:
   - TypeScript
   - TypeScript:Utility Types
   - TypeScript:实用类型
-updated:
+keywords:
+  - TypeScript
+  - TypeScript Utility Types
+  - TypeScript 实用类型
+  - TS
+  - TS Utility Types
+  - TS 实用类型
+  - TypeScript Utility Types - Readonly
+  - TypeScript 实用类型 - Readonly
+  - TS Utility Types - Readonly
+  - TS 实用类型 - Readonly
 ---
 
 `Required<Type>` 类型与 `[Partial<Type>](#Partial-lt-Type-gt)` 类型的作用相反，`Required<Type>` 可将一个类型中的可选属性转换为必选属性。以 `User` 类型为例：

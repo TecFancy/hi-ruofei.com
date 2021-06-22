@@ -2,13 +2,24 @@
 title: "TypeScript Utility Types - Partial: TypeScript 实用类型 - Partial"
 abbrlink: d31a997b
 date: 2021-06-20 01:52:51
+updated:
 categories:
   - 前端
 tags:
   - TypeScript
   - TypeScript:Utility Types
   - TypeScript:实用类型
-updated:
+keywords:
+  - TypeScript
+  - TypeScript Utility Types
+  - TypeScript 实用类型
+  - TS
+  - TS Utility Types
+  - TS 实用类型
+  - TypeScript Utility Types - Partial
+  - TypeScript 实用类型 - Partial
+  - TS Utility Types - Partial
+  - TS 实用类型 - Partial
 ---
 
 `Partial<Type>` 可将一个类型中所有属性转换为可选属性。假设我们有一个 `user` 的类型，如下：

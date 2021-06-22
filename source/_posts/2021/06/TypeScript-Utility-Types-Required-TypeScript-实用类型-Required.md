@@ -2,12 +2,23 @@
 title: "TypeScript Utility Types - Required: TypeScript 实用类型 - Required"
 abbrlink: 64ba61b9
 date: 2021-06-20 16:34:04
+updated:
 categories: 前端
 tags:
   - TypeScript
   - TypeScript:Utility Types
   - TypeScript:实用类型
-updated:
+keywords:
+  - TypeScript
+  - TypeScript Utility Types
+  - TypeScript 实用类型
+  - TS
+  - TS Utility Types
+  - TS 实用类型
+  - TypeScript Utility Types - Required
+  - TypeScript 实用类型 - Required
+  - TS Utility Types - Required
+  - TS 实用类型 - Required
 ---
 
 `Required<Type>` 类型与 `[Partial<Type>](#Partial-lt-Type-gt)` 类型的作用相反，`Required<Type>` 可将一个类型中的可选属性转换为必选属性。以 `User` 类型为例：
