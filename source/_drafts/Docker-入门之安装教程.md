@@ -116,31 +116,31 @@ Server: Docker Engine - Community
 1. 先删除旧的版本（如果没有可以跳过）
 
    ```bash
-   ➜  ~ sudo yum remove docker docker-client docker-client-latest docker-common docker-latest docker-latest-logrotate docker-logrotate docker-engine
+   $ sudo yum remove docker docker-client docker-client-latest docker-common docker-latest docker-latest-logrotate docker-logrotate docker-engine
    ```
 
 2. 安装必须的依赖：
 
    ```bash
-   ➜  ~ sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+   $ sudo yum install -y yum-utils device-mapper-persistent-data lvm2
    ```
 
    添加 `stable` 的 Docker-ce 的源：
 
    ```bash
-   ➜  ~ sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+   $ sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
    ```
 
 3. 安装 `docker-ce`：
 
    ```bash
-   ➜  ~ sudo yum install docker-ce docker-ce-cli containerd.io
+   $ sudo yum install docker-ce docker-ce-cli containerd.io
    ```
 
 4. 选择指定的安装版本（可选）：
 
    ```bash
-   ➜  ~ yum list docker-ce --showduplicates | sort -r  
+   $ yum list docker-ce --showduplicates | sort -r  
    docker-ce.x86_64  3:18.09.1-3.el7                     docker-ce-stable  
    docker-ce.x86_64  3:18.09.0-3.el7                     docker-ce-stable  
    docker-ce.x86_64  18.06.1.ce-3.el7                    docker-ce-stable  
@@ -156,14 +156,14 @@ Server: Docker Engine - Community
    第一部分是 `docker-ce`，第二部分是版本号 `18.09.1`，看明白了吗？就是这样子：
 
    ```bash
-   ➜  ~ sudo yum install -y docker-ce-18.09.1 docker-ce-cli-18.09.1
+   $ sudo yum install -y docker-ce-18.09.1 docker-ce-cli-18.09.1
    ```
 
 5. 启动服务并测试一下：
 
    ```bash
-   ➜  ~ sudo systemctl start docker # 启动服务
-   ➜  ~ sudo docker run hello-world # 来一个 Hello World 吧 
+   $ sudo systemctl start docker # 启动服务
+   $ sudo docker run hello-world # 来一个 Hello World 吧 
    Unable to find image 'hello-world:latest' locally  
    latest: Pulling from library/hello-world  
    1b930d010525: Pull complete  
@@ -199,108 +199,97 @@ Server: Docker Engine - Community
    升级：
 
    ```bash
-   ➜  ~ yum -y update # 更新所有
-   ➜  ~ yum -y update docker-ce docker-ce-cli containerd.io # 更新指定  
+   $ yum -y update # 更新所有
+   $ yum -y update docker-ce docker-ce-cli containerd.io # 更新指定  
    ```
 
    删除：
 
    ```bash
-   ➜  ~ sudo yum remove docker-ce
-   ➜  ~ sudo rm -rf /var/lib/docker # 删除文件系统
+   $ sudo yum remove docker-ce
+   $ sudo rm -rf /var/lib/docker # 删除文件系统
    ```
 
 ### Debian中Docker的安装方法
 
 1. 删除旧的版本(可跳过)
 
-```
- $ sudo apt-get remove docker docker-engine docker.io containerd runc
-```
+   ```bash
+   $ sudo apt-get remove docker docker-engine docker.io containerd runc
+   ```
 
-1. 安装依赖：
+2. 安装依赖：
 
-```
-  $ sudo apt-get update            $ sudo apt-get install        apt-transport-https        ca-certificates        curl        gnupg2        software-properties-common   # 添加GPG key   $ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -      $ sudo apt-key fingerprint 0EBFCD88      pub   4096R/0EBFCD88 2017-02-22   Key fingerprint = 9DC8 5822 9FC7 DD38 854A  E2D8 8D81 803C 0EBF CD88   uid                  Docker Release (CE deb)    sub   4096R/F273FCD8 2017-02-22 
-```
+   ```bash
+   $ sudo apt-get update
+   $ sudo apt-get install \
+   apt-transport-https \
+   ca-certificates \
+   curl \
+   gnupg \
+   lsb-release
+   $ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+   ```
 
+3. 使用 `stable` 安装源：
 
+   - x86_64 / amd64
 
+   ```bash
+   $ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable"
+   ```
 
+   - armhf
 
-1. 使用`stable`安装源：
+   ```bash
+   $ sudo add-apt-repository "deb [arch=armhf] https://download.docker.com/linux/debian $(lsb_release -cs) stable"
+   ```
 
-- x86_64 / amd64
+   - arm64
 
-```
-  $ sudo add-apt-repository 
-"deb [arch=amd64] https://download.docker.com/linux/debian 
-$(lsb_release -cs) 
-stable"
-```
+   ```bash
+   $ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable"
+   ```
 
-- armhf
+4. 安装 `docker-ce`：
 
-```
-$ sudo add-apt-repository 
-"deb [arch=armhf] https://download.docker.com/linux/debian 
-$(lsb_release -cs) 
-stable"
-```
+   ```bash
+   $ sudo apt-get update 
+   $ sudo apt-get install docker-ce docker-ce-cli containerd.io
+   ```
 
-- arm64
+5. 安装指定的版本（可选）：
 
-```
-$ sudo add-apt-repository   
-"deb [arch=amd64] https://download.docker.com/linux/debian   
-$(lsb_release -cs)   
-stable"
-```
+   ```bash
+   $ apt-cache madison docker-ce 
+   docker-ce | 5:18.09.1~3-0~debian-stretch | https://download.docker.com/linux/debian stretch/stable amd64 Packages  
+   docker-ce | 5:18.09.0~3-0~debian-stretch | https://download.docker.com/linux/debian stretch/stable amd64 Packages  
+   docker-ce | 18.06.1~ce~3-0~debian        | https://download.docker.com/linux/debian stretch/stable amd64 Packages  
+   docker-ce | 18.06.0~ce~3-0~debian        | https://download.docker.com/linux/debian stretch/stable amd64 Packages  
+   ...
+   ```
 
-1. 安装`docker-ce`：
+   安装格式：
 
-```
- $ sudo apt-get update  
-      
-    $ sudo apt-get install docker-ce docker-ce-cli containerd.io
-```
+   ```bash
+   $ sudo apt-get install docker-ce= docker-ce-cli= containerd.io
+   ```
 
-1. 安装指定的版本：(可选)
+   举例说明：比如要安装 `5:18.09.1~3-0~debian-stretch` 版本的docker的话：
 
-```
-  $ apt-cache madison docker-ce  
-      
-     docker-ce | 5:18.09.1~3-0~debian-stretch | https://download.docker.com/linux/debian stretch/stable amd64 Packages  
-     docker-ce | 5:18.09.0~3-0~debian-stretch | https://download.docker.com/linux/debian stretch/stable amd64 Packages  
-     docker-ce | 18.06.1~ce~3-0~debian        | https://download.docker.com/linux/debian stretch/stable amd64 Packages  
-     docker-ce | 18.06.0~ce~3-0~debian        | https://download.docker.com/linux/debian stretch/stable amd64 Packages  
-     ...
-```
+   ```bash
+   $ sudo apt-get install docker-ce=18.09.1 docker-ce-cli=18.09.1 containerd.io
+   ```
 
-安装格式：
+6. 启动服务并测试：
 
-```
-$ sudo apt-get install docker-ce= docker-ce-cli= containerd.io
-```
-
-举例说明：比如要安装`5:18.09.1~3-0~debian-stretch`版本的docker的话：
-
-```
-$ sudo apt-get install docker-ce=18.09.1 docker-ce-cli=18.09.1 containerd.io
-```
-
-
-
-1. 启动服务并测试：
-
-```
-$ sudo service docker start
-查看Docker运行状态
-$ sudo service docker status
-$ sudo docker run hello-world
-```
-
-
+   ```bash
+   $ sudo service docker start
+   
+   # 查看Docker运行状态
+   $ sudo service docker status
+   $ sudo docker run hello-world
+   ```
 
 ### Ubuntu中Docker安装方法
 
