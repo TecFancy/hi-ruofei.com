@@ -295,153 +295,125 @@ Server: Docker Engine - Community
 
 1. 删除旧的版本(可跳过)
 
-```
-  $ sudo apt-get remove docker docker-engine docker.io containerd runc
-```
+   ```bash
+   $ sudo apt-get remove docker docker-engine docker.io containerd runc
+   ```
 
-1. 安装依赖：
+2. 安装依赖：
 
-```
-$ sudo apt-get update
-$ sudo apt-get install
-apt-transport-https
-ca-certificates
-curl
-gnupg-agent
-software-properties-common
-添加GPG key
-$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-$ sudo apt-key fingerprint 0EBFCD88
-pub   rsa4096 2017-02-22 [SCEA]
-9DC8 5822 9FC7 DD38 854A  E2D8 8D81 803C 0EBF CD88
-uid           [ unknown] Docker Release (CE deb)
-sub   rsa4096 2017-02-22 [S]
-```
+   ```bash
+   $ sudo apt-get update
+   $ sudo apt-get install
+   apt-transport-https
+   ca-certificates
+   curl
+   gnupg-agent
+   software-properties-common
+   $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - # 添加GPG key
+   $ sudo apt-key fingerprint 0EBFCD88
+   pub   rsa4096 2017-02-22 [SCEA]
+   9DC8 5822 9FC7 DD38 854A  E2D8 8D81 803C 0EBF CD88
+   uid           [ unknown] Docker Release (CE deb)
+   sub   rsa4096 2017-02-22 [S]
+   ```
 
+3. 使用 `stable` 安装源：
 
+   - x86_64/amd64
 
-1. 使用`stable`安装源：
+     ```bash
+     $ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+     ```
 
-- x86_64/amd64
+   - [armhf]
 
-```
- $ sudo add-apt-repository 
-   "deb [arch=amd64] https://download.docker.com/linux/ubuntu 
-   $(lsb_release -cs) 
-   stable"
-```
+     ```bash
+     $ sudo add-apt-repository "deb [arch=armhf] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" 
+     ```
 
-- [armhf]
+   - [arm64]
 
-```
- $ sudo add-apt-repository 
-"deb [arch=armhf] https://download.docker.com/linux/ubuntu 
-$(lsb_release -cs) 
-stable"  
-```
+     ```bash
+     $ sudo add-apt-repository "deb [arch=arm64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+     ```
 
-- [arm64]
+   - [ppc64le (IBM Power)]
 
-```
-$ sudo add-apt-repository 
-   "deb [arch=arm64] https://download.docker.com/linux/ubuntu 
-   $(lsb_release -cs) 
-   stable"
-```
+     ```bash
+     $ sudo add-apt-repository "deb [arch=ppc64el] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" 
+     ```
 
-- [ppc64le (IBM Power)]
+   - s390x (IBM Z)
 
-```
-  $ sudo add-apt-repository 
-   "deb [arch=ppc64el] https://download.docker.com/linux/ubuntu 
-   $(lsb_release -cs) 
-   stable"    
-```
+     ```bash
+     $ sudo add-apt-repository "deb [arch=s390x] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+     ```
 
-- s390x (IBM Z)
+4. 安装 `docker-ce`：
 
-```
-   $ sudo add-apt-repository 
-   "deb [arch=s390x] https://download.docker.com/linux/ubuntu 
-   $(lsb_release -cs) 
-   stable"
-```
+   ```bash
+   $ sudo apt-get update
+   $ sudo apt-get install docker-ce docker-ce-cli containerd.io
+   ```
 
-1. 安装`docker-ce`：
+5. 安装指定的版本（可选）：
 
-```
-$ sudo apt-get update
-$ sudo apt-get install docker-ce docker-ce-cli containerd.io
-```
+   ```bash
+   $ apt-cache madison docker-ce  docker-ce | 5:18.09.1~3-0~ubuntu-xenial | https://download.docker.com/linux/ubuntu  xenial/stable amd64 Packages  docker-ce | 5:18.09.0~3-0~ubuntu-xenial | https://download.docker.com/linux/ubuntu  xenial/stable amd64 Packages  docker-ce | 18.06.1~ce~3-0~ubuntu       | https://download.docker.com/linux/ubuntu  xenial/stable amd64 Packages  docker-ce | 18.06.0~ce~3-0~ubuntu       | https://download.docker.com/linux/ubuntu  xenial/stable amd64 Packages  ...
+   ```
 
+   安装格式：
 
+   ```bash
+   $ sudo apt-get install docker-ce= docker-ce-cli= containerd.io
+   ```
 
-1. 安装指定的版本：(可选)
+   举例说明：比如要安装 `5:18.09.1~3-0~ubuntu-xenial` 版本的docker的话：
 
-```
-  $ apt-cache madison docker-ce  docker-ce | 5:18.09.1~3-0~ubuntu-xenial | https://download.docker.com/linux/ubuntu  xenial/stable amd64 Packages  docker-ce | 5:18.09.0~3-0~ubuntu-xenial | https://download.docker.com/linux/ubuntu  xenial/stable amd64 Packages  docker-ce | 18.06.1~ce~3-0~ubuntu       | https://download.docker.com/linux/ubuntu  xenial/stable amd64 Packages  docker-ce | 18.06.0~ce~3-0~ubuntu       | https://download.docker.com/linux/ubuntu  xenial/stable amd64 Packages  ... 
-```
+   ```bash
+   $ sudo apt-get install docker-ce=18.09.1 docker-ce-cli=18.09.1 containerd.io
+   ```
 
-``
+6. 启动服务并测试：
 
+   ```bash
+   $ sudo service docker start
+   $ sudo service docker status # 查看 Docker 运行状态
+   $ sudo docker run hello-world
+   ```
 
+## Docker-compose 集合命令
 
-安装格式：
-
-```
- $ sudo apt-get install docker-ce= docker-ce-cli= containerd.io  
-```
-
-
-
-举例说明：比如要安装`5:18.09.1~3-0~ubuntu-xenial`版本的docker的话：
-
-```
-$ sudo apt-get install docker-ce=18.09.1 docker-ce-cli=18.09.1 containerd.io
-```
-
-1. 启动服务并测试：
-
-```
-$ sudo service docker start
-查看Docker运行状态
-$ sudo service docker status
-$ sudo docker run hello-world
-```
-
-
-
-## Docker-compose集合命令
-
-Compose工具是一个`批量`工具，用于运行与管理多个`docker`容器。
+Compose工具是一个 `批量` 工具，用于运行与管理多个 `docker` 容器。
 
 官方文档：[Install Docker Compose](https://docs.docker.com/compose/install/)
 
-1. 在Mac/Windows中，已经集成了docker-compose命令
-2. 在WindowsServer中  先启动PowerShell
+1. 在 Mac/Windows 中，已经集成了 docker-compose 命令
 
-```
-  [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-```
+2. 在 WindowsServer 中  先启动 PowerShell
 
-然后运行如下命令：
+   ```bash
+   [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+   ```
 
-```
-Invoke-WebRequest "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-Windows-x86_64.exe" -UseBasicParsing -OutFile $Env:ProgramFilesDockerdocker-compose.exe
-```
+   然后运行如下命令：
 
-然后测试一下：`docker-compose --version`
+   ```bash
+   Invoke-WebRequest "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-Windows-x86_64.exe" -UseBasicParsing -OutFile $Env:ProgramFilesDockerdocker-compose.exe
+   ```
 
-1. Linux中：
+   然后测试一下：`docker-compose --version`
 
-```
- # 下载docker-compose
-sudo curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-给予执行权限
-sudo chmod +x /usr/local/bin/docker-compose
-测试命令
-$ docker-compose --version
-docker-compose version 1.23.2, build 1110ad01
-```
+   ```bash
+   # 下载docker-compose
+   sudo curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+   # 给予执行权限
+   sudo chmod +x /usr/local/bin/docker-compose
+   # 测试命令
+   $ docker-compose --version
+   docker-compose version 1.23.2, build 1110ad01
+   ```
+
+以上就是在各个平台安装 Docker 的步骤，欢迎在下方留言交流。
 
 {% ggad-fluid %}
