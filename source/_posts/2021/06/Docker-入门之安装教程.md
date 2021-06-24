@@ -83,15 +83,15 @@ Server: Docker Engine - Community
 
 ![设置 Docker 中国区加速地址](https://gitee.com/smpower/oss/raw/master/hi-ruofei.com/xaybI4.png)
 
-上面打码的地址是阿里云提供的 Docker 镜像加速地址，每个人都可以去申请一个个人镜像地址实用。 
+上面打码的地址是阿里云提供的 Docker 镜像加速地址，每个人都可以去申请一个个人镜像地使用。
 
 > 阿里云 Docker 镜像加速：[Docker 镜像加速器](https://yq.aliyun.com/articles/29941)
 
 第二种方法是通过 `brew cask` 安装：
 
 ```bash
-➜  ~ brew update   
-➜  ~ brew cask install docker  
+➜  ~ brew update
+➜  ~ brew cask install docker
 ➜  ~ brew cask uninstall docker # 删除的方法, 还需要手动删除Docker.app
 ```
 
@@ -111,7 +111,7 @@ Server: Docker Engine - Community
 
 下面介绍最常见的 Linux 系统下安装 Docker 的方法。
 
-### Centos中Docker安装方法
+### Centos 中 Docker 安装方法
 
 1. 先删除旧的版本（如果没有可以跳过）
 
@@ -140,10 +140,10 @@ Server: Docker Engine - Community
 4. 选择指定的安装版本（可选）：
 
    ```bash
-   $ yum list docker-ce --showduplicates | sort -r  
-   docker-ce.x86_64  3:18.09.1-3.el7                     docker-ce-stable  
-   docker-ce.x86_64  3:18.09.0-3.el7                     docker-ce-stable  
-   docker-ce.x86_64  18.06.1.ce-3.el7                    docker-ce-stable  
+   $ yum list docker-ce --showduplicates | sort -r
+   docker-ce.x86_64  3:18.09.1-3.el7                     docker-ce-stable
+   docker-ce.x86_64  3:18.09.0-3.el7                     docker-ce-stable
+   docker-ce.x86_64  18.06.1.ce-3.el7                    docker-ce-stable
    docker-ce.x86_64  18.06.0.ce-3.el7                    docker-ce-stable
    ```
 
@@ -163,36 +163,36 @@ Server: Docker Engine - Community
 
    ```bash
    $ sudo systemctl start docker # 启动服务
-   $ sudo docker run hello-world # 来一个 Hello World 吧 
-   Unable to find image 'hello-world:latest' locally  
-   latest: Pulling from library/hello-world  
-   1b930d010525: Pull complete  
-   Digest: sha256:2557e3c07ed1e38f26e389462d03ed943586f744621577a99efb77324b0fe535  
-   Status: Downloaded newer image for hello-world:latest  
-   
-   Hello from Docker!  
-   This message shows that your installation appears to be working correctly.  
-   
-   To generate this message, Docker took the following steps:  
-   1. The Docker client contacted the Docker daemon.  
-   2. The Docker daemon pulled the "hello-world" image from the Docker Hub.  
-   (amd64)  
-   3. The Docker daemon created a new container from that image which runs the  
-   executable that produces the output you are currently reading.  
-   4. The Docker daemon streamed that output to the Docker client, which sent it  
-   to your terminal.  
-   
-   To try something more ambitious, you can run an Ubuntu container with:  
-   $ docker run -it ubuntu bash  
-   
-   Share images, automate workflows, and more with a free Docker ID:  
-   https://hub.docker.com/  
-   
-   For more examples and ideas, visit:  
+   $ sudo docker run hello-world # 来一个 Hello World 吧
+   Unable to find image 'hello-world:latest' locally
+   latest: Pulling from library/hello-world
+   1b930d010525: Pull complete
+   Digest: sha256:2557e3c07ed1e38f26e389462d03ed943586f744621577a99efb77324b0fe535
+   Status: Downloaded newer image for hello-world:latest
+
+   Hello from Docker!
+   This message shows that your installation appears to be working correctly.
+
+   To generate this message, Docker took the following steps:
+   1. The Docker client contacted the Docker daemon.
+   2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+   (amd64)
+   3. The Docker daemon created a new container from that image which runs the
+   executable that produces the output you are currently reading.
+   4. The Docker daemon streamed that output to the Docker client, which sent it
+   to your terminal.
+
+   To try something more ambitious, you can run an Ubuntu container with:
+   $ docker run -it ubuntu bash
+
+   Share images, automate workflows, and more with a free Docker ID:
+   https://hub.docker.com/
+
+   For more examples and ideas, visit:
    https://docs.docker.com/get-started/
    ```
 
-   如果看到上面的提示，说明Docker已经成功安装并运行了。
+   如果看到上面的提示，说明 Docker 已经成功安装并运行了。
 
 6. 关于升级&删除：
 
@@ -200,7 +200,7 @@ Server: Docker Engine - Community
 
    ```bash
    $ yum -y update # 更新所有
-   $ yum -y update docker-ce docker-ce-cli containerd.io # 更新指定  
+   $ yum -y update docker-ce docker-ce-cli containerd.io # 更新指定
    ```
 
    删除：
@@ -210,7 +210,7 @@ Server: Docker Engine - Community
    $ sudo rm -rf /var/lib/docker # 删除文件系统
    ```
 
-### Debian中Docker的安装方法
+### Debian 中 Docker 的安装方法
 
 1. 删除旧的版本(可跳过)
 
@@ -254,18 +254,18 @@ Server: Docker Engine - Community
 4. 安装 `docker-ce`：
 
    ```bash
-   $ sudo apt-get update 
+   $ sudo apt-get update
    $ sudo apt-get install docker-ce docker-ce-cli containerd.io
    ```
 
 5. 安装指定的版本（可选）：
 
    ```bash
-   $ apt-cache madison docker-ce 
-   docker-ce | 5:18.09.1~3-0~debian-stretch | https://download.docker.com/linux/debian stretch/stable amd64 Packages  
-   docker-ce | 5:18.09.0~3-0~debian-stretch | https://download.docker.com/linux/debian stretch/stable amd64 Packages  
-   docker-ce | 18.06.1~ce~3-0~debian        | https://download.docker.com/linux/debian stretch/stable amd64 Packages  
-   docker-ce | 18.06.0~ce~3-0~debian        | https://download.docker.com/linux/debian stretch/stable amd64 Packages  
+   $ apt-cache madison docker-ce
+   docker-ce | 5:18.09.1~3-0~debian-stretch | https://download.docker.com/linux/debian stretch/stable amd64 Packages
+   docker-ce | 5:18.09.0~3-0~debian-stretch | https://download.docker.com/linux/debian stretch/stable amd64 Packages
+   docker-ce | 18.06.1~ce~3-0~debian        | https://download.docker.com/linux/debian stretch/stable amd64 Packages
+   docker-ce | 18.06.0~ce~3-0~debian        | https://download.docker.com/linux/debian stretch/stable amd64 Packages
    ...
    ```
 
@@ -275,7 +275,7 @@ Server: Docker Engine - Community
    $ sudo apt-get install docker-ce= docker-ce-cli= containerd.io
    ```
 
-   举例说明：比如要安装 `5:18.09.1~3-0~debian-stretch` 版本的docker的话：
+   举例说明：比如要安装 `5:18.09.1~3-0~debian-stretch` 版本的 docker 的话：
 
    ```bash
    $ sudo apt-get install docker-ce=18.09.1 docker-ce-cli=18.09.1 containerd.io
@@ -291,7 +291,7 @@ Server: Docker Engine - Community
    $ sudo docker run hello-world
    ```
 
-### Ubuntu中Docker安装方法
+### Ubuntu 中 Docker 安装方法
 
 1. 删除旧的版本(可跳过)
 
@@ -328,7 +328,7 @@ Server: Docker Engine - Community
    - [armhf]
 
      ```bash
-     $ sudo add-apt-repository "deb [arch=armhf] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" 
+     $ sudo add-apt-repository "deb [arch=armhf] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
      ```
 
    - [arm64]
@@ -340,7 +340,7 @@ Server: Docker Engine - Community
    - [ppc64le (IBM Power)]
 
      ```bash
-     $ sudo add-apt-repository "deb [arch=ppc64el] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" 
+     $ sudo add-apt-repository "deb [arch=ppc64el] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
      ```
 
    - s390x (IBM Z)
@@ -368,7 +368,7 @@ Server: Docker Engine - Community
    $ sudo apt-get install docker-ce= docker-ce-cli= containerd.io
    ```
 
-   举例说明：比如要安装 `5:18.09.1~3-0~ubuntu-xenial` 版本的docker的话：
+   举例说明：比如要安装 `5:18.09.1~3-0~ubuntu-xenial` 版本的 docker 的话：
 
    ```bash
    $ sudo apt-get install docker-ce=18.09.1 docker-ce-cli=18.09.1 containerd.io
@@ -384,13 +384,13 @@ Server: Docker Engine - Community
 
 ## Docker-compose 集合命令
 
-Compose工具是一个 `批量` 工具，用于运行与管理多个 `docker` 容器。
+Compose 工具是一个 `批量` 工具，用于运行与管理多个 `docker` 容器。
 
 官方文档：[Install Docker Compose](https://docs.docker.com/compose/install/)
 
 1. 在 Mac/Windows 中，已经集成了 docker-compose 命令
 
-2. 在 WindowsServer 中  先启动 PowerShell
+2. 在 WindowsServer 中 先启动 PowerShell
 
    ```bash
    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
