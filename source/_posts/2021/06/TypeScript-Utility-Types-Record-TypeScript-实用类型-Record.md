@@ -86,7 +86,11 @@ type Record<K extends keyof any, T> = {
   type UserPropType = 'name' | 'age' | 'gender';
   ```
 
-  由上面的示例可知：`keyof` 操作符获取一个类型中所有 key，并返回这些 key 的联合类型。
+  由上面的示例可知：`keyof` 操作符获取一个类型中所有 key，并返回这些 key 的联合类型。所以上面 `Record` 的用法还可以改写成这样：
+
+  ```typescript
+  type NewUser = Record<keyof User, string>;
+  ```
 
 - `in` 是一个 `类型关键字`，可以对联合类型进行遍历，只可用在 `type` 关键字下。
 
@@ -105,6 +109,8 @@ type Record<K extends keyof any, T> = {
 - key 的值是类型 `T`。
 
 现在回头看 `Record<Keys, Type>` 的定义是不是就理解了呢？欢迎在下方留言交流。
+
+[Playground Link](https://www.typescriptlang.org/zh/play?#code/C4TwDgpgBAqgzhATlAvFA3gKCjqA7AQwFsIAuKOYRASzwHMBubXAus-AVyICMkncobPABMk5SjXpMAvpjmhIUAHIQA7vCSooAJQgBjAPaJhAHgDWEEAYBmsBIgA0FKrToA+JpkN5K+NRsRyFXV7LSwcQhJyACIAeQAbagA3CGiHZlZ2aIBGAA40qAB6QqhAC5tAeENATfjAGcTmIVFAqGjrCCICeNT06QYgA)
 
 {% ggad-fluid %}
 
