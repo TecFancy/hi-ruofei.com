@@ -61,7 +61,7 @@ type PickUser = {
 };
 ```
 
-那么，`Pick<Type, Keys>` 是如何转换类型的呢？我们通过它的类型前面来分析一下：
+那么，`Pick<Type, Keys>` 是如何转换类型的呢？我们通过它的类型定义来分析一下：
 
 ```typescript
 /**
