@@ -29,7 +29,9 @@ type Letter = 'a' | 'b' | 'c';
 type T0 = Exclude<Letter, 'a'>;
 ```
 
-上面代码中的类型 `T0` 等价于下面的写法：
+上例代码中的类型 `T0` 等价于下面的写法：
+
+<!-- more -->
 
 ```typescript
 type T0 = 'b' | 'c';
