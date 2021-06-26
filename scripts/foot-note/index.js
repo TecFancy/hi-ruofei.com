@@ -66,8 +66,10 @@ function renderFootnotes(text) {
   // add footnotes at the end of the content
   if (footnotes.length) {
     text += '<div id="footnotes">';
-    text += "<hr>";
+    // text += "<hr>";
     text += '<div id="footnotelist">';
+    text +=
+      '<div style="border-bottom: 1px solid #eee; font-size: 1.125em; margin-bottom: 10px; margin-top: 60px;">参考</div>';
     text += '<ol style="list-style:none; padding-left: 0;">' + html + "</ol>";
     text += "</div></div>";
   }
