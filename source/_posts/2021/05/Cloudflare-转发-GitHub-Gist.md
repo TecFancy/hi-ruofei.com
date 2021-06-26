@@ -114,4 +114,3 @@ addEventListener("fetch", (event) => {
 require_once "$IP/extensions/gists/gists.php";
 ```
 
-{% ggad-fluid %}

@@ -54,4 +54,3 @@ for (const [idx, element] of entries) {
 console.log(result);
 ```
 
-{% ggad-fluid %}

@@ -81,4 +81,3 @@ const sum = a + b; // 没有分号也不要紧，但是不推荐这样的写法
 const diff = a - b; // 推荐每条语句后都要写分号
 ```
 
-{% ggad-fluid %}

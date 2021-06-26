@@ -112,5 +112,5 @@ type Record<K extends keyof any, T> = {
 
 [Playground Link](https://www.typescriptlang.org/zh/play?#code/C4TwDgpgBAqgzhATlAvFA3gKCjqA7AQwFsIAuKOYRASzwHMBubXAus-AVyICMkncobPABMk5SjXpMAvpjmhIUAHIQA7vCSooAJQgBjAPaJhAHgDWEEAYBmsBIgA0FKrToA+JpkN5K+NRsRyFXV7LSwcQhJyACIAeQAbagA3CGiHZlZ2aIBGAA40qAB6QqhAC5tAeENATfjAGcTmIVFAqGjrCCICeNT06QYgA)
 
-{% ggad-fluid %}
+
 

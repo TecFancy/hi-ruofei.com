@@ -81,4 +81,3 @@ atou("SSDimaEgVW5pY29kZSE="); // "I ♡ Unicode!"
 - [WindowOrWorkerGlobalScope.btoa()](https://developer.mozilla.org/zh-CN/docs/Web/API/WindowBase64/btoa)
 - [WindowOrWorkerGlobalScope.atob()](https://developer.mozilla.org/zh-CN/docs/Web/API/WindowBase64/atob)
 
-{% ggad-fluid %}

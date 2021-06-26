@@ -35,4 +35,3 @@ if (Array.isArray(value)) {
 }
 ```
 
-{% ggad-fluid %}
