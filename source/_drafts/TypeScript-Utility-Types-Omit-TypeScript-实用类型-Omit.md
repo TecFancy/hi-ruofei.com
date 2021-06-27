@@ -22,7 +22,7 @@ keywords:
   - TS 实用类型 - Omit
 ---
 
-`Omit<Type, Keys>` 从类型中选取所有属性，然后删除键来构造类型。以下面的 `User` 类型为例：
+`Omit<Type, Keys>` 从类型中选取所有属性，然后通过删除指定键来构造类型。以下面的 `User` 类型为例：
 
 ```typescript
 type User = {
@@ -77,6 +77,6 @@ type Omit<T, K extends keyof any> = Pick<T, Exclude<keyof T, K>>;
 
 [Playground Link](https://www.typescriptlang.org/zh/play?#code/C4TwDgpgBAqgzhATlAvFA3gKClAdgQwFsIAuKOYRAS1wHMBubKfW0vAV0ICMlGdXcAEyRkK1OowC+jTKEhQA8oSrB4SVIuXAAPGsQAaKAHIWEI1AA+xgcMRGAfDIDGAe1wUoLrXrJKVejSwcAmIyIwUAGyoANzN9TGkgA)
 
-[^1]: [TypeScript Utility Types - Pick: TypeScript 实用类型 - Pick](/post/bdb49a56/)
+[^1]: [TypeScript 实用类型：Pick](/post/bdb49a56/)
 
 [^2]: TODO
