@@ -10,6 +10,11 @@ comments: false
   `npm-check-updates@11.7.1` => `npm-check-updates@11.8.0`. [文档](https://github.com/raineorshine/npm-check-updates/tree/v11.8.0)
   `hexo-theme-next@8.5.0` => `hexo-theme-next@8.6.1`. [文档](https://theme-next.js.org/next-8-6-1-released/)
 
+## 2021.06.26
+
+- 文章渲染前自动在 post 页面底部（相关文章部分前面）插入谷歌广告
+- 通过 [`markdown-it`](https://www.npmjs.com/package/markdown-it) 依赖在文章中实现 Markdown 脚注功能
+
 ## 2021.06.19
 
 - 更新外部依赖：`npm-check-updates@11.6.0` => `npm-check-updates@11.7.1`，[文档](https://github.com/raineorshine/npm-check-updates/tree/v11.7.1)

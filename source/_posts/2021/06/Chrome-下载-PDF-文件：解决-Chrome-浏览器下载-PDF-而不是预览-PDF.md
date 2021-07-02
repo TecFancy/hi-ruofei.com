@@ -62,4 +62,3 @@ export const fileLink2StreamDownload = ({ url, fileName, type }) => {
 
 上面的方法是经过项目验证过的，你可以放心大胆的 copy 过去，根据你的项目略作修改就能用了！甚至都不用改就可以。
 
-{% ggad-fluid %}

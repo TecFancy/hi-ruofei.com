@@ -67,4 +67,3 @@ function trainAnimal(animal: Bird | Dog) {
 
 通过这个简单的例子，我们就知道什么是联合类型和类型保护了吧。
 
-{% ggad-fluid %}

@@ -1,6 +1,7 @@
 ---
 title: {{ title }}
+updated:
 categories:
 tags:
-updated:
+keywords:
 ---

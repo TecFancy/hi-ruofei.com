@@ -75,5 +75,5 @@ type Partial<T> = {
 
 [Playground Link](https://www.typescriptlang.org/zh/play?#code/C4TwDgpgBAqgzhATlAvFA3gKCjqA7AQwFsIAuKOYRASzwHMBubXAus-AVyICMkncobPABMk5SjXpMAvpkyhIUAAoFEwagQA28JKmWr1WgDw7EAPiaYAxgHs8lKGAMbtCRORVqXpvVgEB6ACpAqAADQhJQqEA9HUByA0B6M0B75UBIBMAQtyhA-2YcCPYAcgB5TWoANwg8gBpsqCCQ0NYIKLiktIysgQbyAEYADiqA4LChUUQmhJT0zOrhsSg8gDMIIi1yqukgA)
 
-{% ggad-fluid %}
+
 

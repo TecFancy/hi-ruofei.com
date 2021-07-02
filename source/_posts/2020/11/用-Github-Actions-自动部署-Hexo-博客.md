@@ -171,4 +171,3 @@ git config 相关的名字和邮件地址替换成大家自己使用的就好了
 
 好了，以上就是利用 GitHub Actions 自动部署 Hexo 到 GitHub Pages 的方法，有疑问的请在下方留言哦 😊
 
-{% ggad-fluid %}

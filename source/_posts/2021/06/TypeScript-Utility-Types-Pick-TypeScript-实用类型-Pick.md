@@ -61,7 +61,7 @@ type PickUser = {
 };
 ```
 
-那么，`Pick<Type, Keys>` 是如何转换类型的呢？我们通过它的类型前面来分析一下：
+那么，`Pick<Type, Keys>` 是如何转换类型的呢？我们通过它的类型定义来分析一下：
 
 ```typescript
 /**
@@ -80,4 +80,3 @@ type Pick<T, K extends keyof T> = {
 
 [Playground Link](https://www.typescriptlang.org/zh/play?#code/C4TwDgpgBAqgzhATlAvFA3gKClAdgQwFsIAuKOYRAS1wHMBubKfW0vAV0ICMlGdXcAEyRkK1OowC+jTKEhQAClQDGAa3hJUilaoA8GxABooAcgLETUAD6mWEEwD4ZAemdQABkrUH3UQN4+gNHqgB9ugJ-agHFyHj7+AYCIOoBhch4Cwoi+gHo6gOQGmMoA9rgUUGA6BmRe6gjIaFg45mwmAPIANlQAbvaGTHZkAIwAHO3SmEA)
 
-{% ggad-fluid %}

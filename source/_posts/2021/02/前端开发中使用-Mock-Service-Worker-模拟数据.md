@@ -182,4 +182,3 @@ ReactDOM.render(<App />, document.getElementById("root"));
 
 Mock Service Worker 是一个非常强大的 mock server 库，可查看 [官网](https://mswjs.io/) 查看详细信息。
 
-{% ggad-fluid %}

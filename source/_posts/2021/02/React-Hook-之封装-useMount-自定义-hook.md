@@ -101,5 +101,5 @@ export default UserList;
 
 可以发现，和直接使用 `useEffect` 很相似，区别是使用 `useMount` 自定义 hook 时省略了 `useEffect` hook 的第二个参数空数组。之后就可以把只在组件加载后执行一次的副作用操作都写在 `useMount` 自定义 hook 中了。
 
-{% ggad-fluid %}
+
 

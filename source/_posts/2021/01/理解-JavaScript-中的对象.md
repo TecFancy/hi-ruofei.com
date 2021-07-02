@@ -500,4 +500,3 @@ const result = recursivelyCheckEqual(first, second, third, fourth);
 console.log(result); // true
 ```
 
-{% ggad-fluid %}

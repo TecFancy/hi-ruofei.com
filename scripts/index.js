@@ -11,3 +11,15 @@ hexo.extend.deployer.register(
 hexo.extend.tag.register("codepen", require("./code-pen"));
 
 hexo.extend.tag.register("ggad", require("./ggad"));
+
+// Register ggad filter
+hexo.extend.filter.register("before_post_render", function (data) {
+  data.content = require("./post-ggad")(data.content);
+  return data;
+});
+
+// Register foot-notes filter
+hexo.extend.filter.register("before_post_render", function (data) {
+  data.content = require("./foot-note")(data.content);
+  return data;
+});

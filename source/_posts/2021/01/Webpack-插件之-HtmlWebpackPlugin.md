@@ -54,4 +54,3 @@ webpack 编译后会在 dist 目录下创建一个 index.html 文件，文件中
 
 要查看该插件所有配置项，参考[插件文档](https://github.com/jantimon/html-webpack-plugin#plugins)。
 
-{% ggad-fluid %}

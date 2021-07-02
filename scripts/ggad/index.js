@@ -1,3 +1,10 @@
+/**
+ * Tag: ggad-fluid - 手动在 md 文件中引入标签
+ *
+ * 用法：
+ * {% ggad-fluid %}
+ */
+
 const element = () => `
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"
@@ -11,12 +18,6 @@ const element = () => `
 </script>
 `;
 
-/**
- * Tag: ggad-fluid
- *
- * 用法：
- * {% ggad-fluid %}
- */
 module.exports = function () {
   return element();
 };
