@@ -18,5 +18,8 @@ keywords:
 - [`Readonly<Type>`](/post/ed3ec8e0)：将一个复合类型中的成员设为只读。
 - [`Record<Keys, Type>`](/post/5a81d7c)：将一个复合类型中的成员映射到另一个复合类型以构造新类型。
 - [`Pick<Type, Keys>`](/post/bdb49a56)：从一个复合类型中挑选若干属性键来构造新类型。
-- [`Omit<Type, Keys>`](/post/37f6eaa)：TODO
+- [`Omit<Type, Keys>`](/post/37f6eaa)：从一个复合类型中选取所有属性并通过删除指定的成员来构造新类型。
 - [`Exclude<Type, ExcludeUnion>`](/post/fca5d737)：排除联合类型中的制定成员来构造新类型。
+- [`Extract<T, U>`](/post/568ce723)：挑选出传入的两个联合类型中相同的成员，将这些相同的成员构造成一个新类型。
+
+---
