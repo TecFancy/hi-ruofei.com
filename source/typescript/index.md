@@ -21,5 +21,6 @@ keywords:
 - [`Omit<Type, Keys>`](/post/37f6eaa)：从一个复合类型中选取所有属性并通过删除指定的成员来构造新类型。
 - [`Exclude<Type, ExcludeUnion>`](/post/fca5d737)：排除联合类型中的制定成员来构造新类型。
 - [`Extract<T, U>`](/post/568ce723)：挑选出传入的两个联合类型中相同的成员，将这些相同的成员构造成一个新类型。
+- [`NonNullable<Type>`](/post/9a86a6f1)：排除联合类型中为 `null` 或 `undefined` 的成员，将剩下的成员构造成新类型。
 
 ---
