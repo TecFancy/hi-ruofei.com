@@ -19,7 +19,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: '14.x'
+          node-version: "14.x"
 
       - name: Setup Hexo
         env:
@@ -30,7 +30,7 @@ jobs:
           chmod 700 ~/.ssh
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan github.com >> ~/.ssh/known_hosts
-          git config --global user.email "contact@mail.ruofei.site"
+          git config --global user.email "rf.wangchn@foxmail.com"
           git config --global user.name "ruofei"
           npm install hexo-cli -g
           npm i
