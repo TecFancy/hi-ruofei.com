@@ -28,12 +28,12 @@
     "hexo-renderer-marked": "^4.0.0",
     "hexo-renderer-stylus": "^2.0.1",
     "hexo-server": "^2.0.0",
-    "hexo-theme-next": "^8.6.1"
+    "hexo-theme-next": "^8.7.0"
   },
   "devDependencies": {
-    "markdown-it": "^12.0.6",
+    "markdown-it": "^12.2.0",
     "node-gyp": "^8.1.0",
-    "npm-check-updates": "^11.8.0",
+    "npm-check-updates": "^11.8.3",
     "xmlhttprequest": "^1.8.0"
   }
 }
