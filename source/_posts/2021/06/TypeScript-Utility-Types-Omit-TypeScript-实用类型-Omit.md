@@ -9,17 +9,6 @@ tags:
   - TypeScript
   - TypeScript:Utility Types
   - TypeScript:实用类型
-keywords:
-  - TypeScript
-  - TypeScript Utility Types
-  - TypeScript 实用类型
-  - TS
-  - TS Utility Types
-  - TS 实用类型
-  - TypeScript Utility Types - Omit
-  - TypeScript 实用类型 - Omit
-  - TS Utility Types - Omit
-  - TS 实用类型 - Omit
 ---
 
 本篇介绍 TypeScript 实用类型中的 `Omit` 类型。`Omit<Type, Keys>` 从类型中选取所有属性，然后通过删除指定键来构造类型。以下面的 `User` 类型为例：

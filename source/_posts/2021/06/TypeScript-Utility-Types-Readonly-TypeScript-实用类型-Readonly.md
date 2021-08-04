@@ -8,17 +8,6 @@ tags:
   - TypeScript
   - TypeScript:Utility Types
   - TypeScript:实用类型
-keywords:
-  - TypeScript
-  - TypeScript Utility Types
-  - TypeScript 实用类型
-  - TS
-  - TS Utility Types
-  - TS 实用类型
-  - TypeScript Utility Types - Readonly
-  - TypeScript 实用类型 - Readonly
-  - TS Utility Types - Readonly
-  - TS 实用类型 - Readonly
 
 ---
 

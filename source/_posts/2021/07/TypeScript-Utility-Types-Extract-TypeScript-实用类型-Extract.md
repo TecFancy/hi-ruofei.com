@@ -9,17 +9,6 @@ tags:
   - TypeScript
   - TypeScript:Utility Types
   - TypeScript:实用类型
-keywords:
-  - TypeScript
-  - TypeScript Utility Types
-  - TypeScript 实用类型
-  - TS
-  - TS Utility Types
-  - TS 实用类型
-  - TypeScript Utility Types - Extract
-  - TypeScript 实用类型 - Extract
-  - TS Utility Types - Extract
-  - TS 实用类型 - Extract
 ---
 
 本篇介绍 TypeScript 实用类型中的 `Extract` 类型。看字面意思，`Extract` 是指**取出**、**挑出**的意思，`Extract` 会挑选出传入的两个联合类型中相同的成员，将这些相同的成员构造成一个新类型，构造的新类型有可能是联合类型，也有可能是其他任何类型。

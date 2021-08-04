@@ -7,13 +7,6 @@ categories:
   - 前端开发
 tags:
   - 前端进阶
-Keywords:
-  - Docker
-  - Docker Compose
-  - MacOS 安装 Docker
-  - Windows 安装 Docker
-  - Linux 安装 Docker
-  - Docker 教程
 ---
 
 本篇介绍了在 Mac OS, Windows, Linux 下的 Docker 安装方法。开始之前我们先看一下官方对 Docker 的介绍：
