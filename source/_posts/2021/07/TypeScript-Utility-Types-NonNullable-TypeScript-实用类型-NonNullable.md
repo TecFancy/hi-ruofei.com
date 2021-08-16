@@ -9,17 +9,6 @@ tags:
   - TypeScript
   - TypeScript:Utility Types
   - TypeScript:实用类型
-keywords:
-  - TypeScript
-  - TypeScript Utility Types
-  - TypeScript 实用类型
-  - TS
-  - TS Utility Types
-  - TS 实用类型
-  - TypeScript Utility Types - NonNullable
-  - TypeScript 实用类型 - NonNullable
-  - TS Utility Types - NonNullable
-  - TS 实用类型 - NonNullable
 ---
 
 本篇介绍 TypeScript 实用类型中的 `NonNullable<Type>` 类型。`NonNullable` 会从传入的类型中将 `null` 和 `undefined` 排除，之后把剩下的成员构造成一个新类型。

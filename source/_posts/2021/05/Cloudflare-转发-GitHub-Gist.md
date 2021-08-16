@@ -8,10 +8,6 @@ categories:
 tags:
   - Extensions
   - 扩展
-keywords:
-  - Cloudflare
-  - Github Gist
-  - MediaWiki 插入 Github Gist
 ---
 
 本文记录了如何在 MediaWiki 中插入 GitHub Gist 代码片段。

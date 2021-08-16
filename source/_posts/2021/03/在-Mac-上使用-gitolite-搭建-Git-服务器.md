@@ -5,7 +5,6 @@ tags: gitolite
 abbrlink: 952aa112
 date: 2021-03-26 18:21:48
 updated: 2021-05-26
-keywords: git,gitolite,git 裸仓库,iCloud,MacOS,MacBook,SSH,MacBook 远程登录
 ---
 
 ## 目标

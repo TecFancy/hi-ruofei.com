@@ -9,17 +9,6 @@ tags:
   - TypeScript
   - TypeScript:Utility Types
   - TypeScript:实用类型
-keywords:
-  - TypeScript
-  - TypeScript Utility Types
-  - TypeScript 实用类型
-  - TS
-  - TS Utility Types
-  - TS 实用类型
-  - TypeScript Utility Types - Pick
-  - TypeScript 实用类型 - Pick
-  - TS Utility Types - Pick
-  - TS 实用类型 - Pick
 ---
 
 `Pick<Type, Keys>` 可从类型中选取一组属性键来构造类型。以下面的 `User` 类型为例：

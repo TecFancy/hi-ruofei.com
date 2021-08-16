@@ -8,17 +8,6 @@ tags:
   - TypeScript
   - TypeScript:Utility Types
   - TypeScript:实用类型
-keywords:
-  - TypeScript
-  - TypeScript Utility Types
-  - TypeScript 实用类型
-  - TS
-  - TS Utility Types
-  - TS 实用类型
-  - TypeScript Utility Types - Record
-  - TypeScript 实用类型 - Record
-  - TS Utility Types - Record
-  - TS 实用类型 - Record
 ---
 
 `Record<Keys, Type>` 可构造一个对象类型，其属性 key 是 key，属性值是类型。该类型可用于将一个类型的属性映射到另一个类型。

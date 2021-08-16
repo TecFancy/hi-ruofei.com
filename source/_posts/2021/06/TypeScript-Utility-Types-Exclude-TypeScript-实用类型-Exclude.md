@@ -9,17 +9,6 @@ tags:
   - TypeScript
   - TypeScript:Utility Types
   - TypeScript:实用类型
-keywords:
-  - TypeScript
-  - TypeScript Utility Types
-  - TypeScript 实用类型
-  - TS
-  - TS Utility Types
-  - TS 实用类型
-  - TypeScript Utility Types - Exclude
-  - TypeScript 实用类型 - Exclude
-  - TS Utility Types - Exclude
-  - TS 实用类型 - Exclude
 ---
 
 `Exclude<Type, ExcludeUnion>` 通过排除联合类型中的指定成员来构造新类型。
