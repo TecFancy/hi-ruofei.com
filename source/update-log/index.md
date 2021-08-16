@@ -4,6 +4,13 @@ date: 2021-03-19 22:34:00
 comments: false
 ---
 
+## 2021.08.16
+
+- `markdown-it`: ^12.0.6  →  ^12.2.0     
+- `npm-check-updates`: ^11.8.0  →  ^11.8.3     
+- `hexo-renderer-marked`: ^4.0.0  →   ^4.1.0     
+- `hexo-theme-next`: ^8.6.1  →   ^8.7.0
+
 ## 2021.07.02
 
 - 更新外部依赖：
