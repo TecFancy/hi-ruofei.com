@@ -20,6 +20,8 @@ keywords:
 2. mariadb 镜像：`docker pull mariadb`；
 3. nginx 镜像：`docker pull nginx`。
 
+{% ggad-fluid %}
+
 ### 启动 mariadb 数据库容器
 
 终端中执行以下命令：
@@ -51,6 +53,8 @@ docker run -d --name mediawiki -p 81:80 -p 444:443 --link mariadb:mariadb mediaw
 ```bash
 docker run -d --name nginx -p 80:80 -p 443:443 nginx
 ```
+
+{% ggad-fluid %}
 
 ### 修改 nginx 配置文件
 
