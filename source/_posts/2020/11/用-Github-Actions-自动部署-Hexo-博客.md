@@ -1,9 +1,10 @@
 ---
 title: 用 Github Actions 自动部署 Hexo 博客
 tags:
+  - 博客
   - Hexo
 categories:
-  - 博客
+  - 建站
 abbrlink: "23472701"
 date: 2020-11-23 22:18:24
 updated:
