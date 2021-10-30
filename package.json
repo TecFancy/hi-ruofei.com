@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "markdown-it": "^12.2.0",
-    "node-gyp": "^8.2.0",
+    "node-gyp": "^8.3.0",
     "npm-check-updates": "^11.8.5",
     "xmlhttprequest": "^1.8.0"
   }
