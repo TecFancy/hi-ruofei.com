@@ -819,7 +819,7 @@ mermaid:
 # Use Animate.css to animate everything.
 # For more information: https://animate.style
 motion:
-  enable: false
+  enable: true
   async: false
   transition:
     # All available transition variants: https://theme-next.js.org/animate/
@@ -838,13 +838,15 @@ motion:
 
 # For more information: https://github.com/CodeByZach/pace
 pace:
-  enable: true
+  enable:
+    true
     # All available colors:
-  # black | blue | green | orange | pink | purple | red | silver | white | yellow
-  color: blue
+    # black | blue | green | orange | pink | purple | red | silver | white | yellow
+  color:
+    blue
     # All available themes:
     # big-counter | bounce | barber-shop | center-atom | center-circle | center-radar | center-simple
-  # corner-indicator | fill-left | flat-top | flash | loading-bar | mac-osx | material | minimal
+    # corner-indicator | fill-left | flat-top | flash | loading-bar | mac-osx | material | minimal
   theme: minimal
 
 # Canvas ribbon
