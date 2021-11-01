@@ -1,5 +1,5 @@
 {%- if page.keywords %}
-  <meta name="keywords" content="{{ page.keywords }},{{ config.keywords }}">
+  <meta name="keywords" content="{{ config.keywords }},{{ page.keywords }}">
 {% elseif config.keywords %}
   <meta name="keywords" content="{{ config.keywords }}">
 {%- endif %}
