@@ -13,5 +13,8 @@
     "styl",
     "vercel",
     "Widgetpack"
-  ]
+  ],
+  "fileheader.configObj": {
+    "autoAdd": false
+  }
 }
