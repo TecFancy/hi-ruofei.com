@@ -1,7 +1,7 @@
 /*
  * @Author: 若非
  * @Date: 2021-11-03 16:45:12
- * @LastEditTime: 2021-11-03 17:54:01
+ * @LastEditTime: 2021-11-04 15:58:08
  * @LastEditors: Please set LastEditors
  * @Description: Conditional Types - 条件类型
  * @FilePath: \hi-ruofei.com\source\_data\typescript\conditionalTypes.ts
@@ -62,6 +62,12 @@ const fourthLabel = simpleCreateLabel(Math.random() ? 42 : "hello world"); // Id
 /**
  * 条件类型约束
  */
+// type MessageOf<T> = T["message"];
+type MessageOf<T extends { message: unknown }> = T["message"];
+interface SuccessInfoType {
+  message: string;
+}
+type SuccessInfoContents = MessageOf<SuccessInfoType>; // type SuccessInfoContents = string
 
 /**
  * 在条件类型中推断
