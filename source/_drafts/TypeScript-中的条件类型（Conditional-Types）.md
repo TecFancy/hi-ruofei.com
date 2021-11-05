@@ -101,6 +101,20 @@ interface SuccessInfoType {
 type SuccessInfoContents = MessageOf<SuccessInfoType>; // type SuccessInfoContents = string
 ```
 
+上面这段代码，我们将泛型 `T` 约束为 `{ message: unknown }`，这样当我们通过 `T["message"]` 访问成员 `message` 时就能得到它的类型了。但是这里有一个问题，如果泛型 `T` 中不存在 `message` 成员的话会发生什么呢？
+
+```typescript
+type MessageOf<T extends { message: unknown }> = T["message"];
+interface SuccessInfoType {
+  errorMessage: string;
+}
+type SuccessInfoContents = MessageOf<SuccessInfoType>; // type SuccessInfoContents = unknown
+// 类型“SuccessInfoType”不满足约束“{ errorMessage: unknown; }”。
+//   类型 "SuccessInfoType" 中缺少属性 "errorMessage"，但类型 "{ errorMessage: unknown; }" 中需要该属性。
+```
+
+
+
 ## 在条件类型中推断
 
 ## 分配条件类型
