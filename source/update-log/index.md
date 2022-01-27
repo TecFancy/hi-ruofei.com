@@ -4,6 +4,17 @@ date: 2021-03-19 22:34:00
 comments: false
 ---
 
+## 2022.01.27
+
+- Update dependency markdown-it to v12.3.2
+- Update dependency node-gyp to v8.4.1
+- Update dependency npm-check-updates to v12.2.1
+- Update dependency hexo to v6.0.0
+- Update dependency hexo-generator-sitemap to v2.2.0
+- Update dependency hexo-renderer-ejs to v2.0.0
+- Update dependency hexo-server to v3.0.0
+- Update dependency hexo-theme-next to v8.9.0
+
 ## 2021.10.17
 
 - `hexo-theme-next`: ^8.7.1 → ^8.8.0
