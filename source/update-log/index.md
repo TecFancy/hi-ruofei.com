@@ -4,6 +4,10 @@ date: 2021-03-19 22:34:00
 comments: false
 ---
 
+## 2022.01.30
+
+- 尝试修复移动设备易用性问题
+
 ## 2022.01.27
 
 - Update dependency markdown-it to v12.3.2
