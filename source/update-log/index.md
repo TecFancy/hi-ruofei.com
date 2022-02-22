@@ -6,6 +6,13 @@ comments: false
 
 ## 2022.01.30
 
+- Update dependency hexo to v6.0.0
+- Update dependency hexo-renderer-marked to v5.0.0
+- Update dependency hexo-theme-next to v8.10.0
+- Update dependency npc-check-updates to v12.4.0
+
+## 2022.01.30
+
 - 尝试修复移动设备易用性问题
 
 ## 2022.01.27

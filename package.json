@@ -10,7 +10,7 @@
     "ncu": "ncu"
   },
   "hexo": {
-    "version": "5.4.0"
+    "version": "6.0.0"
   },
   "dependencies": {
     "hexo": "^6.0.0",
@@ -25,15 +25,15 @@
     "hexo-generator-tag": "^1.0.0",
     "hexo-related-popular-posts": "^5.0.1",
     "hexo-renderer-ejs": "^2.0.0",
-    "hexo-renderer-marked": "^4.1.0",
+    "hexo-renderer-marked": "^5.0.0",
     "hexo-renderer-stylus": "^2.0.1",
     "hexo-server": "^3.0.0",
-    "hexo-theme-next": "^8.8.2"
+    "hexo-theme-next": "^8.10.0"
   },
   "devDependencies": {
     "markdown-it": "^12.3.2",
     "node-gyp": "^8.4.1",
-    "npm-check-updates": "^12.2.1",
+    "npm-check-updates": "^12.4.0",
     "xmlhttprequest": "^1.8.0"
   }
 }
