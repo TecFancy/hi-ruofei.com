@@ -4,6 +4,12 @@ date: 2021-03-19 22:34:00
 comments: false
 ---
 
+## 2022.03.10
+
+- Update dependency hexo-theme-next to v8.10.1
+- Update dependency node-gyp to v9.0.0
+- Update dependency npm-check-updates v12.5.2
+
 ## 2022.01.30
 
 - Update dependency hexo to v6.0.0
