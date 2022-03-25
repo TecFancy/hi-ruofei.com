@@ -62,31 +62,30 @@ ssh-keygen -t rsa -b 4096 -C "Hexo Deploy Key" -f github-deploy-key-hi-ruofei-co
 
 首先在 GitHub 上打开保存 Hexo 原始代码的仓库，访问 `Settings -> Secrets`，页面如下：
 
-![](https://gitee.com/smpower/oss/raw/master/hi-ruofei.com/m3xXzS.png)
+![](/images/2020/11/secrets.png)
 
 然后点击 `New repository secret`:
 
-![](https://gitee.com/smpower/oss/raw/master/hi-ruofei.com/XdMDG7.png)
+![](/images/2020/11/secrets2.png)
 
 `Name` 处填写 `HEXO_DEPLOY_KEY_HI_RUOFEI_COM`，注意大小写，这个后面的 GitHub Actions Workflow 要用到，一定不能写错。
 
 在 `Value` 处填写 `github-deploy-key-hi-ruofei-com` 中的内容：
 
-![](https://gitee.com/smpower/oss/raw/master/hi-ruofei.com/pVy6sf.png)
-
+![](/images/2020/11/new_secret.png)
 添加了私钥以后的页面如下：
 
-![](https://gitee.com/smpower/oss/raw/master/hi-ruofei.com/fayLTw.png)
+![](/images/2020/11/secrets3.png)
 
 ### 配置公钥
 
 接下来我们需要访问存放网页的仓库，也就是 Hexo 部署以后的仓库，比如：yourname.github.io 这种，访问 Settings -> Deploy keys：
 
-![](https://gitee.com/smpower/oss/raw/master/hi-ruofei.com/j4pxPH.png)
+![](/images/2020/11/deploy_keys.png)
 
 点击 `Add deploy key` 按钮来添加一个新的公钥：
 
-![](https://gitee.com/smpower/oss/raw/master/hi-ruofei.com/3KaPrB.png)
+![](/images/2020/11/add_new_deploy_key.png)
 
 在 Title 中输入：HEXO_DEPLOY_PUB_HI_RUOFEI_COM 字样，当然也可以填写其它自定义的名字。
 
@@ -96,11 +95,11 @@ ssh-keygen -t rsa -b 4096 -C "Hexo Deploy Key" -f github-deploy-key-hi-ruofei-co
 注意：一定要勾选 Allow write access 来打开写权限，否则无法写入会导致部署失败。
 {% endnote %}
 
-![](https://gitee.com/smpower/oss/raw/master/hi-ruofei.com/JHvTlw.png)
+![](/images/2020/11/add_new_deploy_key2.png)
 
 最后添加好了公钥的界面如下：
 
-![](https://gitee.com/smpower/oss/raw/master/hi-ruofei.com/asgIIE.png)
+![](/images/2020/11/deploy_keys2.png)
 
 ## 创建 Workflow
 
@@ -166,9 +165,8 @@ git config 相关的名字和邮件地址替换成大家自己使用的就好了
 
 下面就是 GitHub Actions 页面显示的运行结果：
 
-![](https://gitee.com/smpower/oss/raw/master/hi-ruofei.com/bWdSrU.png)
+![](/images/2020/11/workflows.png)
 
 前面有绿色钩钩的，就表示部署成功，红色叉叉的表示失败。如果部署失败，还会收到 GitHub 的邮件提醒。
 
 好了，以上就是利用 GitHub Actions 自动部署 Hexo 到 GitHub Pages 的方法，有疑问的请在下方留言哦 😊
-
