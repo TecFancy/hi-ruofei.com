@@ -4,6 +4,10 @@ date: 2021-03-19 22:34:00
 comments: false
 ---
 
+## 2022.04.01
+
+- 常规更新
+
 ## 2022.03.10
 
 - Update dependency hexo-theme-next to v8.10.1
