@@ -35,7 +35,7 @@ tags:
 
 安装成功后，在系统菜单栏上会有 Docker 的小图标：
 
-![Docker 小图标](https://gitee.com/smpower/oss/raw/master/hi-ruofei.com/Xt0mTI.png)
+![Docker 小图标](/images/2021/06/Xt0mTI.png)
 
 安装完之后，在终端工具中，使用 `docker version` 来查看 Docker 版本。
 
@@ -74,7 +74,7 @@ Server: Docker Engine - Community
 
 设置中国区加速地址：
 
-![设置 Docker 中国区加速地址](https://gitee.com/smpower/oss/raw/master/hi-ruofei.com/xaybI4.png)
+![设置 Docker 中国区加速地址](/images/2021/06/xaybI4.png)
 
 上面打码的地址是阿里云提供的 Docker 镜像加速地址，每个人都可以去申请一个个人镜像地使用。
 
@@ -278,7 +278,7 @@ Server: Docker Engine - Community
 
    ```bash
    $ sudo service docker start
-   
+
    # 查看Docker运行状态
    $ sudo service docker status
    $ sudo docker run hello-world
@@ -408,4 +408,3 @@ Compose 工具是一个 `批量` 工具，用于运行与管理多个 `docker` �
    ```
 
 以上就是在各个平台安装 Docker 的步骤，欢迎在下方留言交流。
-

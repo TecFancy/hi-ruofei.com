@@ -43,7 +43,7 @@ The key's randomart image is:
 
 打开 `系统偏好设置` -> `共享`，勾选 `远程登录`：
 
-![远程登录](https://gitee.com/smpower/oss/raw/master/hi-ruofei.com/knM4zu.png)
+![远程登录](/images/2021/03/knM4zu.png)
 
 ## 使用 iCloud 同步裸仓库
 
@@ -73,13 +73,13 @@ $ cd /Users/<username>/repositories && touch test
 
 <!-- tab /Users/git/repositories/ 目录下的内容 -->
 
-![](https://gitee.com/smpower/oss/raw/master/hi-ruofei.com/fozuqm.png)
+![](/images/2021/03/fozuqm.png)
 
 <!-- endtab -->
 
 <!-- tab iCloud 中 repositories 目录下的内容 -->
 
-![](https://gitee.com/smpower/oss/raw/master/hi-ruofei.com/8gIbvw.jpg)
+![](/images/2021/03/8gIbvw.jpg)
 
 <!-- endtab -->
 
@@ -119,7 +119,7 @@ $ gitolite setup -pk YourName.pub # 这里的 YourName.pub 就是之前生成的
 - `gitolite-admin.git`：这是管理员仓库，添加人员、权限等操作需要将这个仓库克隆下来在其冲的 config 中配置。
 - `testing.git`：这个是一个测试仓库。
 
-![初始化的两个仓库](https://gitee.com/smpower/oss/raw/master/hi-ruofei.com/2xkXB3.png)
+![初始化的两个仓库](/images/2021/03/2xkXB3.png)
 
 之后我们提交的代码都会同步到 iCloud。
 
@@ -145,22 +145,21 @@ Host local # local 就表示本机（127.0.0.1）
 git clone <username>@local:gitolite-admin.git # <username> 是你的用户名
 ```
 
-![克隆 gitolite-adming.git 仓库](https://gitee.com/smpower/oss/raw/master/hi-ruofei.com/fHnR56.png)
+![克隆 gitolite-adming.git 仓库](/images/2021/03/fHnR56.png)
 
 用编辑器打开 `gitolite-admin` 仓库，修改其中的 `gitolite.conf` 文件：
 
-![修改 gitolite.conf 文件](https://gitee.com/smpower/oss/raw/master/hi-ruofei.com/ZEeaGy.png)
+![修改 gitolite.conf 文件](/images/2021/03/ZEeaGy.png)
 
 图中新加的名为 `hi-ruofei.com` 仓库名就是本站的源码仓库。
 
 修改之后，提交到 gitolite，gitolite 会自动帮我们创建一个名为 `hi-ruofei.com` 的裸仓库，该仓库会同步到 iCloud 上。
 
-![自动创建 hi-ruofei.com 裸仓库](https://gitee.com/smpower/oss/raw/master/hi-ruofei.com/x51QfE.png)
+![自动创建 hi-ruofei.com 裸仓库](/images/2021/03/x51QfE.png)
 
-![保存在 iCloud 上的裸仓库](https://gitee.com/smpower/oss/raw/master/hi-ruofei.com/vY8mFa.png)
+![保存在 iCloud 上的裸仓库](/images/2021/03/vY8mFa.png)
 
 ## 参考
 
 - [Gitolite](https://gitolite.com/)
 - [45.在 Mac 上使用 gitolite 搭建 Git 服务器](https://blog.csdn.net/a464057216/article/details/52644021)
-

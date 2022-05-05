@@ -145,7 +145,7 @@ $ npx msw init public/ --save
   // src/mocks/browser.js
   import { setupWorker } from "msw";
   import { handlers } from "./handlers";
-  
+
   // This configures a Service Worker with the given request handlers.
   export const worker = setupWorker(...handlers);
   ```
@@ -172,7 +172,7 @@ ReactDOM.render(<App />, document.getElementById("root"));
 
 在浏览器控制台中应能看到打印出的成功的消息：
 
-![验证和检查 msw](https://gitee.com/smpower/oss/raw/master/hi-ruofei.com/XGFC5j.png)
+![验证和检查 msw](/images/2021/02/XGFC5j.png)
 
 ### 集成到 Node 环境
 
@@ -181,4 +181,3 @@ ReactDOM.render(<App />, document.getElementById("root"));
 ## 小结
 
 Mock Service Worker 是一个非常强大的 mock server 库，可查看 [官网](https://mswjs.io/) 查看详细信息。
-
