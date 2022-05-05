@@ -4,6 +4,13 @@ date: 2021-03-19 22:34:00
 comments: false
 ---
 
+## 2022.05.05
+
+- Update dependency hexo-generator-sitemap to v3.0.1
+- Update dependency hexo-theme-next to 8.11.1
+- Update dependency markdown-it to 13.0.1
+- Update dependency npm-check-updates to 12.5.11
+
 ## 2022.04.01
 
 - 常规更新
