@@ -222,7 +222,7 @@ footer:
   # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, http://www.beian.gov.cn
   beian:
     enable: true
-    icp: <a href="https://beian.miit.gov.cn">鲁ICP备19026031号-2</a>
+    icp: <a href="https://beian.miit.gov.cn">鲁ICP备19026031号-4</a>
     # The digit in the num of gongan beian.
     gongan_id:
     # The full num of gongan beian.
@@ -838,10 +838,12 @@ motion:
 
 # For more information: https://github.com/CodeByZach/pace
 pace:
-  enable: true
+  enable:
+    true
     # All available colors:
     # black | blue | green | orange | pink | purple | red | silver | white | yellow
-  color: blue
+  color:
+    blue
     # All available themes:
     # big-counter | bounce | barber-shop | center-atom | center-circle | center-radar | center-simple
     # corner-indicator | fill-left | flat-top | flash | loading-bar | mac-osx | material | minimal
