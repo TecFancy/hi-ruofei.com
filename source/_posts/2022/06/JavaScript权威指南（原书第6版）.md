@@ -7,6 +7,7 @@ tags:
   - 电子书
   - 技术类书籍
 keywords:
+  - JavaScript权威指南（原书第6版）
   - 图书下载
   - 电子书下载
   - azw3电子书下载
