@@ -78,6 +78,7 @@ creative_commons:
 # External url should start with http:// or https://
 menu:
   home: / || fa fa-home
+  books: https://books.hi-ruofei.com || fa fa-link
   zhuanlan: /typescript || fa fa-book
   tags: /tags/ || fa fa-tags
   categories: /categories/ || fa fa-th
