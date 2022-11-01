@@ -78,8 +78,7 @@ creative_commons:
 # External url should start with http:// or https://
 menu:
   home: / || fa fa-home
-  books: /books || fa fa-link
-  zhuanlan: /typescript || fa fa-book
+  # zhuanlan: /typescript || fa fa-book
   tags: /tags/ || fa fa-tags
   categories: /categories/ || fa fa-th
   archives: /archives/ || fa fa-archive
