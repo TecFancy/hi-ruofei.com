@@ -14,6 +14,8 @@ keywords:
 1. 操作系统：MacOS/Windows (支持 WSL)/Linux
 2. Node.js：>= 12.22.0
 
+<!-- more -->
+
 ## 自动设置
 
 推荐使用 `create-next-app` 来自动设置 NextJS 应用：
